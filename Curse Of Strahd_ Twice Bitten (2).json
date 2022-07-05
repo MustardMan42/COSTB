@@ -5,7 +5,7 @@
 				"json": "CurseOfStrahdTwiceBitten",
 				"abbreviation": "CoSTB",
 				"full": "Curse Of Strahd: Twice Bitten",
-				"url": "",
+				"url": "https://raw.githubusercontent.com/MustardMan42/CurseOfStrahdTwiceBitten/34fa92067d5063aa6d58d87478c39cf3387ba8f6/Curse%20Of%20Strahd_%20Twice%20Bitten%20(3).json",
 				"authors": [
 					"P. Herzing"
 				],
@@ -171,7 +171,8 @@
 						}
 					}
 				]
-			}
+			},
+			"uniqueId": "2e5f308f-45df-47ee-a4d2-1d4022fe4115"
 		},
 		{
 			"name": "Mimic",
@@ -333,7 +334,8 @@
 						}
 					}
 				]
-			}
+			},
+			"uniqueId": "3d094bbb-4849-4b49-b58e-036c3b1fd5a8"
 		},
 		{
 			"name": "Lady Fiona Wachter",
@@ -451,7 +453,8 @@
 			"miscTags": [
 				"MW"
 			],
-			"tokenUrl": "https://5e.tools/img/CoS/Lady Fiona Wachter.png"
+			"tokenUrl": "https://5e.tools/img/CoS/Lady Fiona Wachter.png",
+			"uniqueId": "5be82b42-f94c-45af-85bc-c70b046ca30b"
 		},
 		{
 			"name": "Gulthias Druid",
@@ -605,6 +608,7 @@
 					}
 				]
 			},
+			"uniqueId": "e22b7764-2e39-4e5d-a8c1-190d318bb8e5",
 			"trait": [
 				{
 					"name": "Vampiric Strike",
@@ -777,6 +781,185 @@
 						"href": {
 							"type": "internal",
 							"path": "bestiary/MM/Twig Blight.png"
+						}
+					}
+				]
+			},
+			"uniqueId": "4bbddb50-92b1-4b4b-b852-3806c33ea543"
+		},
+		{
+			"name": "Victor Vallakovich",
+			"isNpc": true,
+			"source": "CurseOfStrahdTwiceBitten",
+			"page": 105,
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"size": [
+				"M"
+			],
+			"ac": [
+				12,
+				{
+					"ac": 15,
+					"condition": "with {@spell mage armor}",
+					"braces": true
+				}
+			],
+			"hp": {
+				"average": 40,
+				"formula": "9d8"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 9,
+			"dex": 14,
+			"con": 11,
+			"int": 17,
+			"wis": 12,
+			"cha": 11,
+			"save": {
+				"int": "+6",
+				"wis": "+4"
+			},
+			"skill": {
+				"arcana": "+6",
+				"history": "+6"
+			},
+			"passive": 11,
+			"languages": [
+				"any four languages"
+			],
+			"cr": "6",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Victor is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 14}, {@hit 6} to hit with spell attacks). Victor has the following wizard spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell fire bolt}",
+								"{@spell light}",
+								"{@spell mage hand}",
+								"{@spell prestidigitation}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell detect magic}",
+								"{@spell mage armor}",
+								"{@spell magic missile}",
+								"{@spell shield}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell misty step}",
+								"{@spell suggestion}"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell counterspell}",
+								"{@spell fireball}",
+								"{@spell fly}"
+							]
+						},
+						"4": {
+							"slots": 3,
+							"spells": [
+								"{@spell greater invisibility}",
+								"{@spell ice storm}"
+							]
+						},
+						"5": {
+							"slots": 1,
+							"spells": [
+								"{@spell cone of cold}"
+							]
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage."
+					]
+				}
+			],
+			"languageTags": [
+				"X"
+			],
+			"damageTags": [
+				"P"
+			],
+			"damageTagsSpell": [
+				"B",
+				"C",
+				"F",
+				"O"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"miscTags": [
+				"RW",
+				"MW",
+				"THW"
+			],
+			"tokenUrl": "https://5e.tools/img/CoS/Victor Vallakovich.png",
+			"uniqueId": "2857e229-a722-469c-a922-05344bf79f29",
+			"fluff": {
+				"entries": [
+					"Victor is a tall, thin man, with round glasses he keeps pushing up his nose. Victor is a passionate practitioner of magic, he loves to learn more about it. He wants to take his fiance Stella Wachter out of the town, but ran into a wrinkle. Victor is one of the allies the party needs to make. He wants to be free of the fake happiness that the Baron perpetuates.",
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Treasure",
+										"entries": [
+											"Victor's spellbook contains all the spells Victor has prepared (see the {@creature mage} stat block in the Monster Manual) as well as the following spells: {@spell animate dead}, {@spell blight}, {@spell cloudkill}, {@spell darkvision}, {@spell glyph of warding}, {@spell levitate}, {@spell remove curse}, and {@spell thunderwave}."
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Helping Hand",
+						"entries": [
+							"Victor can help the party in a number of ways. He can help with magical research, he can create magical items, and he can look for normal secrets about Vallaki or Barovia. He can sell some wizard inks and paper, since he can make or find his own with his own resources. If asked about making magical weapons, Victor will say he can do some research, and that he’s heard there are powerful undead creatures bent on vengeance who carry magical weapons. He adds that he would never seek one of these undead out himself."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.redd.it/6iydni5fanu71.jpg"
 						}
 					}
 				]
