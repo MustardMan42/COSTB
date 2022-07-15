@@ -171,8 +171,7 @@
 						}
 					}
 				]
-			},
-			"uniqueId": "2e5f308f-45df-47ee-a4d2-1d4022fe4115"
+			}
 		},
 		{
 			"name": "Mimic",
@@ -334,8 +333,7 @@
 						}
 					}
 				]
-			},
-			"uniqueId": "3d094bbb-4849-4b49-b58e-036c3b1fd5a8"
+			}
 		},
 		{
 			"name": "Lady Fiona Wachter",
@@ -454,7 +452,25 @@
 				"MW"
 			],
 			"tokenUrl": "https://5e.tools/img/CoS/Lady Fiona Wachter.png",
-			"uniqueId": "5be82b42-f94c-45af-85bc-c70b046ca30b"
+			"fluff": {
+				"entries": [
+					"Lady Wachter makes no secret of her family's long-standing loyalty to the von Zarovich line. She believes that Strahd von Zarovich is no tyrant but, at worst, a negligent landlord. She would happily serve Strahd as burgomaster of Vallaki, but she knows that Baron Vargas Vallakovich won't give up his birthright without a fight.",
+					"Lady Wachter’s three points:",
+					"1. Vallaki would be better off if it openly submitted to Lord Strahd",
+					"2. The Baron is incompetent, and his festivals don’t raise the people’s spirits so much as drain the town’s coffers",
+					"3. Izek Strazni is a tyrannical brute, the Baron rule’s by force through him.",
+					"If a PC mentions Stella, Fiona will become irritated. She will curtly say that Fiona’s engagement with Victor would have worked if the Baron hadn’t raised such a strange little freak."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://static.wikia.nocookie.net/alberons-mistake/images/9/94/Fiona_Wachter_%282%29.jpg/"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Gulthias Druid",
@@ -608,7 +624,6 @@
 					}
 				]
 			},
-			"uniqueId": "e22b7764-2e39-4e5d-a8c1-190d318bb8e5",
 			"trait": [
 				{
 					"name": "Vampiric Strike",
@@ -679,7 +694,7 @@
 			"languages": [
 				"understands Common but can't speak"
 			],
-			"cr": "1/2",
+			"cr": "1",
 			"trait": [
 				{
 					"name": "False Appearance",
@@ -784,8 +799,7 @@
 						}
 					}
 				]
-			},
-			"uniqueId": "4bbddb50-92b1-4b4b-b852-3806c33ea543"
+			}
 		},
 		{
 			"name": "Victor Vallakovich",
@@ -925,7 +939,6 @@
 				"THW"
 			],
 			"tokenUrl": "https://5e.tools/img/CoS/Victor Vallakovich.png",
-			"uniqueId": "2857e229-a722-469c-a922-05344bf79f29",
 			"fluff": {
 				"entries": [
 					"Victor is a tall, thin man, with round glasses he keeps pushing up his nose. Victor is a passionate practitioner of magic, he loves to learn more about it. He wants to take his fiance Stella Wachter out of the town, but ran into a wrinkle. Victor is one of the allies the party needs to make. He wants to be free of the fake happiness that the Baron perpetuates.",
@@ -964,6 +977,199 @@
 					}
 				]
 			}
+		},
+		{
+			"name": "Alice Twistleaf",
+			"source": "CurseOfStrahdTwiceBitten",
+			"page": 7,
+			"damageTagsSpell": [
+				"B",
+				"L",
+				"N",
+				"P",
+				"S",
+				"Y"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 82,
+				"formula": "11d8 + 33"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 14,
+			"con": 16,
+			"int": 15,
+			"wis": 14,
+			"cha": 16,
+			"skill": {
+				"arcana": "+4",
+				"deception": "+5",
+				"perception": "+4",
+				"stealth": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 14,
+			"languages": [
+				"Common",
+				"Draconic",
+				"Sylvan"
+			],
+			"cr": "3",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Alice's innate spellcasting ability is Charisma (spell save {@dc 14}). She can innately cast the following spells, requiring no material components:"
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell find familiar}",
+								"{@spell witch bolt}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell alter self}",
+								"{@spell suggestion}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell dispel magic}",
+								"{@spell plant growth}",
+								"{@spell slow}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell blight}",
+								"{@spell polymorph}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell scrying}",
+								"{@spell seeming}"
+							],
+							"slots": 2
+						},
+						"6": {
+							"spells": [
+								"{@spell magic jar}"
+							],
+							"slots": 1
+						}
+					},
+					"will": [
+						"{@spell dancing lights}",
+						"{@spell minor illusion}",
+						"{@spell vicious mockery}"
+					],
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Mimicry",
+					"entries": [
+						"Alice can mimic animal sounds and humanoid voices. A creature that hears the sounds can tell they are imitations with a successful {@dc 14} Wisdom (Insight) check."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) slashing damage."
+					]
+				},
+				{
+					"name": "Illusory Appearance",
+					"entries": [
+						"Alice covers herself and anything she is wearing or carrying with a magical illusion that makes her look like another creature of her general size and humanoid shape. The illusion ends if Alice takes a bonus action to end it or if she dies.",
+						"The changes wrought by this effect fail to hold up to physical inspection. For example, Alice could appear to have smooth skin, but someone touching her would feel her rough flesh. Otherwise, a creature must take an action to visually inspect the illusion and succeed on a {@dc 20} Intelligence (Investigation) check to discern that Alice is disguised."
+					]
+				},
+				{
+					"name": "Invisible Passage",
+					"entries": [
+						"Alice magically turns {@condition invisible} until she attacks or casts a spell, or until her concentration ends (as if concentrating on a spell). While {@condition invisible}, she leaves no physical evidence of her passage, so she can be tracked only by magic. Any equipment she wears or carries is {@condition invisible} with her."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"DR",
+				"S"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"invisible"
+			],
+			"conditionInflictSpell": [
+				"frightened",
+				"paralyzed",
+				"poisoned",
+				"unconscious"
+			],
+			"tokenUrl": "https://5e.tools/img/CM/Hag of the Fetid Gaze.png",
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"A Vistani potion brewer, Alice Twistleaf creates and sells potions and accessories to make them.",
+							"Alice can change her appearance, and is much plainer underneath her illusion."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.pinimg.com/originals/c4/0e/37/c40e375dfeb09a30cf5fee9a64af5d59.jpg"
+						}
+					}
+				]
+			},
+			"isNpc": true
 		}
 	]
 }
