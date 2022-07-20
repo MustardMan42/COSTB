@@ -171,7 +171,8 @@
 						}
 					}
 				]
-			}
+			},
+			"uniqueId": "2e5f308f-45df-47ee-a4d2-1d4022fe4115"
 		},
 		{
 			"name": "Mimic",
@@ -333,7 +334,8 @@
 						}
 					}
 				]
-			}
+			},
+			"uniqueId": "3d094bbb-4849-4b49-b58e-036c3b1fd5a8"
 		},
 		{
 			"name": "Lady Fiona Wachter",
@@ -368,40 +370,44 @@
 							]
 						},
 						"1": {
-							"slots": 4,
 							"spells": [
 								"{@spell command}",
 								"{@spell purify food and drink}",
 								"{@spell sanctuary}"
-							]
+							],
+							"slots": 4
 						},
 						"2": {
-							"slots": 3,
 							"spells": [
 								"{@spell augury}",
 								"{@spell gentle repose}",
 								"{@spell hold person}"
-							]
+							],
+							"slots": 3
 						},
 						"3": {
-							"slots": 2,
 							"spells": [
 								"{@spell animate dead}",
-								"{@spell create food and water}"
-							]
+								"{@spell spirit shroud|TCE}"
+							],
+							"slots": 2
 						}
 					},
 					"ability": "wis",
 					"type": "spellcasting"
 				}
 			],
-			"damageTagsSpell": [],
+			"damageTagsSpell": [
+				"C",
+				"N",
+				"R"
+			],
 			"size": [
 				"M"
 			],
 			"hp": {
-				"formula": "8d8 + 8",
-				"average": 44
+				"formula": "12d8 + 12",
+				"average": 66
 			},
 			"speed": {
 				"walk": 30
@@ -421,20 +427,20 @@
 			"languages": [
 				"any two languages"
 			],
-			"cr": "3",
+			"cr": "5",
 			"trait": [
 				{
-					"name": "Divine Eminence",
+					"name": "Ravening Iron",
 					"entries": [
-						"As a bonus action, Fiona can expend a spell slot to cause its melee weapon attacks to magically deal an extra 10 ({@damage 3d6}) radiant damage to a target on a hit. This benefit lasts until the end of the turn. If Fiona expends a spell slot of 2nd level or higher, the extra damage increases by {@dice 1d6} for each level above 1st."
+						"As a bonus action, Fiona can expend her own hit dice to cause her melee weapon attacks to magically deal an extra 3 ({@damage 1d6}) necrotic damage to a target on a hit. Fiona can expend additional hit die, up to four per attack, the extra damage increases by {@dice 1d6} for each hit die spent."
 					]
 				}
 			],
 			"action": [
 				{
-					"name": "Mace",
+					"name": "Ritual Dagger",
 					"entries": [
-						"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d6}) bludgeoning damage."
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d4 + 1}) piercing damage."
 					]
 				}
 			],
@@ -442,8 +448,8 @@
 				"X"
 			],
 			"damageTags": [
-				"B",
-				"R"
+				"N",
+				"P"
 			],
 			"spellcastingTags": [
 				"CC"
@@ -452,6 +458,7 @@
 				"MW"
 			],
 			"tokenUrl": "https://5e.tools/img/CoS/Lady Fiona Wachter.png",
+			"uniqueId": "5be82b42-f94c-45af-85bc-c70b046ca30b",
 			"fluff": {
 				"entries": [
 					"Lady Wachter makes no secret of her family's long-standing loyalty to the von Zarovich line. She believes that Strahd von Zarovich is no tyrant but, at worst, a negligent landlord. She would happily serve Strahd as burgomaster of Vallaki, but she knows that Baron Vargas Vallakovich won't give up his birthright without a fight.",
@@ -624,6 +631,7 @@
 					}
 				]
 			},
+			"uniqueId": "e22b7764-2e39-4e5d-a8c1-190d318bb8e5",
 			"trait": [
 				{
 					"name": "Vampiric Strike",
@@ -799,7 +807,8 @@
 						}
 					}
 				]
-			}
+			},
+			"uniqueId": "4bbddb50-92b1-4b4b-b852-3806c33ea543"
 		},
 		{
 			"name": "Victor Vallakovich",
@@ -939,6 +948,7 @@
 				"THW"
 			],
 			"tokenUrl": "https://5e.tools/img/CoS/Victor Vallakovich.png",
+			"uniqueId": "2857e229-a722-469c-a922-05344bf79f29",
 			"fluff": {
 				"entries": [
 					"Victor is a tall, thin man, with round glasses he keeps pushing up his nose. Victor is a passionate practitioner of magic, he loves to learn more about it. He wants to take his fiance Stella Wachter out of the town, but ran into a wrinkle. Victor is one of the allies the party needs to make. He wants to be free of the fake happiness that the Baron perpetuates.",
@@ -1169,6 +1179,7 @@
 					}
 				]
 			},
+			"uniqueId": "5e2d5e00-911c-48e6-94be-888ad56f14fb",
 			"isNpc": true
 		}
 	]
