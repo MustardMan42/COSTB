@@ -1181,6 +1181,448 @@
 			},
 			"uniqueId": "5e2d5e00-911c-48e6-94be-888ad56f14fb",
 			"isNpc": true
+		},
+		{
+			"name": "Hell Puppy",
+			"source": "CurseOfStrahdTwiceBitten",
+			"page": 8,
+			"basicRules": true,
+			"size": [
+				"M"
+			],
+			"type": "fiend",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "5d8 + 10",
+				"average": 32
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 15,
+			"dex": 12,
+			"con": 14,
+			"int": 6,
+			"wis": 13,
+			"cha": 6,
+			"skill": {
+				"perception": "+5"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 15,
+			"immune": [
+				"fire"
+			],
+			"languages": [
+				"understands Infernal but can't speak it"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Keen Hearing and Smell",
+					"entries": [
+						"The hound has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
+					]
+				},
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The hound has advantage on an attack roll against a creature if at least one of the hound's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage plus 3 ({@damage 1d6}) fire damage."
+					]
+				},
+				{
+					"name": "Fire Breath {@recharge 5}",
+					"entries": [
+						"The hound exhales fire in a 15-foot cone. Each creature in that area must make a {@dc 12} Dexterity saving throw, taking 14 ({@damage 4d6}) fire damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"environment": [
+				"mountain",
+				"underdark"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/hell-hound.mp3"
+			},
+			"traitTags": [
+				"Keen Senses",
+				"Pack Tactics"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Breath Weapon"
+			],
+			"languageTags": [
+				"CS",
+				"I"
+			],
+			"damageTags": [
+				"F",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://5e.tools/img/MM/Hell Hound.png",
+			"fluff": {
+				"name": "Hell Hound",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Monstrous, fire-breathing fiends that take the form of powerful dogs, hell hounds are found on the battlefields of Acheron and throughout the Lower Planes. On the Material Plane, hell hounds are most commonly seen in service to devils, fire giants, and other evil creatures that use them as guard animals and companions.",
+									{
+										"name": "Burning Hunger",
+										"type": "entries",
+										"entries": [
+											"Hell hounds hunt in packs, feeding on any creature that appears edible. They avoid potentially dangerous foes in favor of targeting the weakest prey with their savage bite and fiery breath, demonstrating a relentless determination as they pursue that prey to the bitter end.",
+											"When hell hounds feed, the flesh they consume stokes the infernal fires that burn within them. When a hell hound dies, that fire consumes the creature's remains in a billowing eruption of smoke and blazing embers, leaving nothing behind but scorched tufts of black fur."
+										]
+									},
+									{
+										"name": "Evil to the Core",
+										"type": "entries",
+										"entries": [
+											"Hell hounds are smarter than mundane beasts, and their lawful nature makes them good at following orders. However, a hell hound's evil disposition means that the creature can't be trained to be anything other than a ruthless killer. If a hell hound isn't allowed to indulge its malevolent hunger, it quickly abandons or turns against its master."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Hell Hound.jpg"
+						}
+					}
+				]
+			},
+			"uniqueId": "50190b91-89f7-47d6-899e-75c78d9ec320"
+		},
+		{
+			"name": "Baron Vargas Vallakovich",
+			"isNpc": true,
+			"source": "CurseOfStrahdTwiceBitten",
+			"page": 9,
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"size": [
+				"M"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item scale mail|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 52,
+				"formula": "7d8 + 21"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 16,
+			"con": 17,
+			"int": 12,
+			"wis": 14,
+			"cha": 16,
+			"skill": {
+				"deception": "+5",
+				"insight": "+4",
+				"persuasion": "+5"
+			},
+			"passive": 12,
+			"languages": [
+				"any two languages"
+			],
+			"cr": "4",
+			"action": [
+				{
+					"name": "Rapier",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d8 + 5}) piercing damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"Vargas adds 2 to its AC against one melee attack that would hit it. To do so, Vargas must see the attacker and be wielding a melee weapon."
+					]
+				}
+			],
+			"actionTags": [
+				"Parry"
+			],
+			"languageTags": [
+				"X"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"tokenUrl": "https://artbreeder.b-cdn.net/imgs/0fb83598dc4c2052885cf0f4bba5.jpeg",
+			"uniqueId": "b2e9fe87-0eff-44b5-ba8b-dda1760aaabb",
+			"shortName": "The Baron",
+			"trait": [
+				{
+					"name": "Dueling (Fighting Style)",
+					"entries": [
+						"When the Baron is wielding a melee weapon in one hand and no other weapons, he gains a +2 bonus to damage rolls with that weapon (already added in below)."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Away from any constituents the Baron seems to shrink, and he describes the issues that face Vallaki. He says it is difficult to strike a balance between hope and realism. ",
+					"“The common people need both the promise of the carrot and the threat of the rod. The rod I know well, but there’s precious little of value to offer my people in times such as these.”",
+					"“Now I’m getting reports of vampires crawling up and down walls like spiders. Of course, it came from Lady Wachter’s two dipshits so they were probably just drunk. Still, you can’t take any chances, amiright?”",
+					"“Look, I’ll be honest with you all. If there’s something out there that can climb walls as easily as walking, then my town is defenseless.”",
+					"“The walls that I built are my greatest achievement. But they’re also the lie that Vallaki requires to continue. The things outside our walls can get in here and kill us anytime they want. All I can do is try and keep the people as happy as I can between their soulless birth and their meaningless death.”",
+					"“I’ll probably have more work for you after the festival. Speaking of, I hope you all plan to attend. Attendance is mandatory for all the people of Vallaki, and I want to show you to the people. The heroes who brought them their booze for the day! Spirits to raise your spirits. I should write that down.”"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://artbreeder.b-cdn.net/imgs/0fb83598dc4c2052885cf0f4bba5.jpeg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Izek Strazni",
+			"isNpc": true,
+			"source": "CurseOfStrahdTwiceBitten",
+			"page": 10,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item studded leather armor|phb|studded leather}"
+					]
+				}
+			],
+			"hp": {
+				"average": 112,
+				"formula": "15d8 + 45"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 15,
+			"con": 16,
+			"int": 10,
+			"wis": 9,
+			"cha": 15,
+			"skill": {
+				"intimidation": "+8",
+				"perception": "+2"
+			},
+			"passive": 12,
+			"languages": [
+				"Common"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Brute",
+					"entries": [
+						"A melee weapon deals one extra die of its damage when Izek hits with it (included in the attack)."
+					]
+				},
+				{
+					"name": "Protected by Dark Powers (1/Day)",
+					"entries": [
+						"If Izek is attacked, he magically calls {@dice 1d4} Hell Puppies. The called creatures arrive at initiative count 20 of the next round, acting as allies of Izek and obeying his spoken commands. The fiends remain for 1 hour, until Izek dies, or until he dismisses them as a bonus action."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Izek makes two attacks with his battleaxe."
+					]
+				},
+				{
+					"name": "Battleaxe",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) slashing damage, or 15 ({@dice 2d10 + 4}) when used with two hands."
+					]
+				},
+				{
+					"name": "Hurl Flame",
+					"entries": [
+						"{@atk rs} {@hit 5} to hit, range 60 ft., one target. {@h}10 ({@damage 3d6}) fire damage. If the target is a flammable object that isn't being worn or carried, it catches fire."
+					]
+				}
+			],
+			"traitTags": [
+				"Brute"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"F",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"tokenUrl": "https://5e.tools/img/CoS/Izek Strazni.png",
+			"fluff": {
+				"name": "Izek Strazni",
+				"source": "CoS",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"Izek and his sister were born in Vallaki. One morning, their father and their uncle took them fishing on Lake Zarovich. On the way back to town, a dire wolf attacked Izek and bit off his right arm. His father carried Izek back to town while his uncle distracted the beast. His sister ran and hid in the woods and was never seen again.",
+											"Unlike his sister, Izek was born without a soul. As time wore on, he forgot his lost sister and learned to cope with his disability.",
+											{
+												"name": "Orphaned Killer",
+												"type": "entries",
+												"entries": [
+													"Izek's parents succumbed to their grief, leaving him an orphan. He became a sociopath. Other children ruthlessly mocked him because of his dead family and his missing arm, but he was a large boy and had no trouble killing them and disposing of their bodies. He was eventually caught in the act and brought to the burgomaster. Instead of punishing the boy for his crimes, Baron Vallakovich pardoned Izek and took him into his home. Izek has been loyal to the burgomaster ever since, enjoying the power of his position and the comforts of his master's mansion. When he isn't enforcing the burgomaster's will, Izek drinks copious amounts of wine."
+												]
+											},
+											{
+												"name": "Fiendish Gift",
+												"type": "entries",
+												"entries": [
+													"After years of doing Baron Vallakovich's dirty work, Izek awakened from a drunken stupor one morning to find that he had grown a new arm to replace the one he had lost.",
+													"The new appendage has barbed spines, elongated fingers, and long nails. He can create fire with the snap of his fiendish fingers and has used the flames to put the fear of the devil in every Vallakian."
+												]
+											},
+											{
+												"name": "Doll Collector",
+												"type": "entries",
+												"entries": [
+													"Perhaps more disturbing than his fiendish arm and his murderous nature is Izek's collection of dolls, which he keeps in his bedroom in the burgomaster's mansion. Izek often has dreams of a beautiful young woman, and for years he has forced a local toymaker named Gadof Blinsky to craft dolls in her likeness. The woman is Ireena Kolyana, although Izek doesn't know her name."
+												]
+											},
+											{
+												"name": "Family Is Forever",
+												"type": "entries",
+												"entries": [
+													"Izek has dreams of Ireena. If he spots her, he tries to take her by force to the burgomaster's mansion. If he succeeds, he holds her captive in his bedroom (chapter 5, area N3j). Unknown to Izek and Ireena, they are brother and sister. Ireena fled after Izek was attacked by the dire wolf and became lost in the woods. She wandered for days in shock until she was found and adopted by Kolyan Indirovich in the village of Barovia. Izek covets her in an unwholesome way and won't allow anyone or anything to come between them."
+												]
+											}
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Izek Strazni's Traits",
+										"entries": [
+											{
+												"name": "Ideal",
+												"type": "entries",
+												"entries": [
+													"\"Fear is a powerful weapon. I use it to get what I want.\""
+												]
+											},
+											{
+												"name": "Bond",
+												"type": "entries",
+												"entries": [
+													"\"I am loyal to my master, Baron Vallakovich, for he brought me into his home. I owe him my life, but he isn't family.\""
+												]
+											},
+											{
+												"name": "Flaw",
+												"type": "entries",
+												"entries": [
+													"\"I would do anything, kill anything, to find my sister.\""
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			"uniqueId": "0ec243e6-f547-4823-b80e-cebb0fcf1560",
+			"isNamedCreature": true
 		}
 	]
 }
