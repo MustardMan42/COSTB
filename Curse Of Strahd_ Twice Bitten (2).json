@@ -1385,9 +1385,11 @@
 			"cr": "4",
 			"action": [
 				{
-					"name": "Rapier",
+					"name": "Heartseeker",
 					"entries": [
-						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d8 + 5}) piercing damage."
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d8 + 6}) piercing damage.",
+						"If the Baron rolls a 20 with this magic weapon, the target takes an extra 7 piercing damage, in addition to the critical damage.",
+						"Heartseeker is a +1 magical weapon, the bonus to the attack roll and damage are added to the attack already."
 					]
 				}
 			],
@@ -1424,6 +1426,7 @@
 			],
 			"fluff": {
 				"entries": [
+					"The Baron wields a magical rapier he has named Heartseeker. The blade conforms to its owner's vicious nature, and deals additional damage on a critical hit.",
 					"Away from any constituents the Baron seems to shrink, and he describes the issues that face Vallaki. He says it is difficult to strike a balance between hope and realism. ",
 					"“The common people need both the promise of the carrot and the threat of the rod. The rod I know well, but there’s precious little of value to offer my people in times such as these.”",
 					"“Now I’m getting reports of vampires crawling up and down walls like spiders. Of course, it came from Lady Wachter’s two dipshits so they were probably just drunk. Still, you can’t take any chances, amiright?”",
@@ -1502,19 +1505,26 @@
 					"entries": [
 						"If Izek is attacked, he magically calls {@dice 1d4} Hell Puppies. The called creatures arrive at initiative count 20 of the next round, acting as allies of Izek and obeying his spoken commands. The fiends remain for 1 hour, until Izek dies, or until he dismisses them as a bonus action."
 					]
+				},
+				{
+					"name": "Curse (Berserker Battleaxe)",
+					"entries": [
+						"Izek is unwilling to part with the axe, keeping it within reach at all times. He also has disadvantage on attack rolls with weapons other than this one, unless no foe is within 60 feet of him that he can see or hear.",
+						"Whenever a hostile creature damages Izek while the axe is in his possession, he must succeed on a {@dc 15} Wisdom saving throw or go berserk. While berserk, he must use his action each round to attack the creature nearest to him with the axe. If he can make extra attacks as part of the Attack action, he uses those extra attacks, moving to attack the next nearest creature after he fells his current target. If he has multiple possible targets, he attacks one at random. He is berserk until he starts his turn with no creatures within 60 feet of him that he can see or hear."
+					]
 				}
 			],
 			"action": [
 				{
 					"name": "Multiattack",
 					"entries": [
-						"Izek makes two attacks with his battleaxe."
+						"Izek makes two attacks with his Berserker Battleaxe."
 					]
 				},
 				{
-					"name": "Battleaxe",
+					"name": "Berserker Battleaxe",
 					"entries": [
-						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) slashing damage, or 15 ({@dice 2d10 + 4}) when used with two hands."
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d8 + 5}) slashing damage, or 16 ({@dice 2d10 + 5}) when used with two hands."
 					]
 				},
 				{
