@@ -1510,7 +1510,7 @@
 					"name": "Curse (Berserker Battleaxe)",
 					"entries": [
 						"Izek is unwilling to part with the axe, keeping it within reach at all times. He also has disadvantage on attack rolls with weapons other than this one, unless no foe is within 60 feet of him that he can see or hear.",
-						"Whenever a hostile creature damages Izek while the axe is in his possession, he must succeed on a {@dc 15} Wisdom saving throw or go berserk. While berserk, he must use his action each round to attack the creature nearest to him with the axe. If he can make extra attacks as part of the Attack action, he uses those extra attacks, moving to attack the next nearest creature after he fells his current target. If he has multiple possible targets, he attacks one at random. He is berserk until he starts his turn with no creatures within 60 feet of him that he can see or hear."
+						"Whenever Izek rolls a 1 on an attack roll using this weapon, he rolls a new attack targeting an ally within five feet of him. If the result is a hit, they take damage as if Izek had attacked them. If there are no allies within five feet of Izek, he makes a new attack roll with advantage against his own AC. If the result is a hit, Izek takes damage as if he had attacked himself."
 					]
 				}
 			],
@@ -1551,10 +1551,8 @@
 				"MW"
 			],
 			"hasFluff": true,
-			"tokenUrl": "https://5e.tools/img/CoS/Izek Strazni.png",
+			"tokenUrl": "https://preview.redd.it/6zvy7ewnpdc71.png?width=1023&format=png&auto=webp&s=1122998b1077042a93ed8c830b2634822a42434d",
 			"fluff": {
-				"name": "Izek Strazni",
-				"source": "CoS",
 				"entries": [
 					{
 						"type": "entries",
@@ -1628,6 +1626,15 @@
 								]
 							}
 						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://preview.redd.it/6zvy7ewnpdc71.png?width=1023&format=png&auto=webp&s=1122998b1077042a93ed8c830b2634822a42434d"
+						}
 					}
 				]
 			},
