@@ -1958,10 +1958,8 @@
 				"MW"
 			],
 			"hasFluff": true,
-			"tokenUrl": "https://5e.tools/img/CoS/Rictavio.png",
+			"tokenUrl": "https://images.kanka.io/user/RA3hjHNEUrFKt6EukRy8ELn1uoM=/smart/src/characters%2F9W7Q4a3byew2npPVpH7STx3mp1B8DUvlAGDLjR1X.jpeg",
 			"fluff": {
-				"name": "Rictavio",
-				"source": "CoS",
 				"entries": [
 					{
 						"type": "entries",
@@ -2027,6 +2025,15 @@
 								]
 							}
 						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://images.kanka.io/user/RA3hjHNEUrFKt6EukRy8ELn1uoM=/smart/src/characters%2F9W7Q4a3byew2npPVpH7STx3mp1B8DUvlAGDLjR1X.jpeg"
+						}
 					}
 				]
 			},
