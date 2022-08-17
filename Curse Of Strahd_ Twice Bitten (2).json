@@ -359,7 +359,7 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"Fiona is a 5th-level spellcaster. Her spellcasting ability is Wisdom (spell save {@dc 13}, {@hit 5} to hit with spell attacks). Fiona has the following cleric spells prepared:"
+						"Fiona is a 5th-level spellcaster. Her spellcasting ability is Wisdom (spell save {@dc 14}, {@hit 6} to hit with spell attacks). Fiona has the following cleric spells prepared:"
 					],
 					"spells": {
 						"0": {
@@ -372,7 +372,7 @@
 						"1": {
 							"spells": [
 								"{@spell command}",
-								"{@spell purify food and drink}",
+								"{@spell cure wounds}",
 								"{@spell sanctuary}"
 							],
 							"slots": 4
@@ -428,14 +428,6 @@
 				"any two languages"
 			],
 			"cr": "5",
-			"trait": [
-				{
-					"name": "Ravening Iron",
-					"entries": [
-						"As a bonus action, Fiona can expend her own hit dice to cause her melee weapon attacks to magically deal an extra 3 ({@damage 1d6}) necrotic damage to a target on a hit. Fiona can expend additional hit die, up to four per attack, the extra damage increases by {@dice 1d6} for each hit die spent."
-					]
-				}
-			],
 			"action": [
 				{
 					"name": "Ritual Dagger",
@@ -477,7 +469,16 @@
 						}
 					}
 				]
-			}
+			},
+			"bonus": [
+				{
+					"name": "Ravening Iron",
+					"entries": [
+						"As a bonus action, Fiona can expend her own hit dice (she has 5) to cause her melee weapon attacks to magically deal an extra 3 ({@damage 1d6}) necrotic damage to a target on a hit. Fiona can expend additional hit die, up to four per attack, the extra damage increases by {@dice 1d6} for each hit die spent."
+					]
+				}
+			],
+			"isNamedCreature": true
 		},
 		{
 			"name": "Gulthias Druid",
@@ -1814,50 +1815,50 @@
 			],
 			"ac": [
 				{
-					"ac": 12,
+					"ac": 15,
 					"from": [
-						"{@item leather armor|phb}"
+						"{@item breastplate|phb}"
 					]
 				}
 			],
 			"hp": {
-				"average": 77,
-				"formula": "14d8 + 14"
+				"formula": "16d8 + 32",
+				"average": 104
 			},
 			"speed": {
 				"walk": 30
 			},
 			"str": 9,
 			"dex": 12,
-			"con": 13,
+			"con": 14,
 			"int": 16,
 			"wis": 18,
 			"cha": 16,
 			"save": {
-				"con": "+4",
-				"wis": "+7"
+				"con": "+6",
+				"wis": "+8"
 			},
 			"skill": {
-				"arcana": "+9",
-				"insight": "+7",
-				"medicine": "+7",
-				"perception": "+7",
-				"religion": "+6",
-				"sleight of hand": "+4"
+				"arcana": "+11",
+				"insight": "+8",
+				"medicine": "+8",
+				"perception": "+8",
+				"religion": "+7",
+				"sleight of hand": "+5"
 			},
-			"passive": 17,
+			"passive": 18,
 			"languages": [
 				"Abyssal",
 				"Common",
 				"Elvish",
 				"Infernal"
 			],
-			"cr": "5",
+			"cr": "9",
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"Rictavio is a 9th-level spellcaster. His spellcasting ability is Wisdom (spell save {@dc 15}, {@hit 7} to hit with spell attacks). Rictavio has the following cleric spells prepared:"
+						"Rictavio is a 9th-level spellcaster. His spellcasting ability is Wisdom (spell save {@dc 16}, {@hit 8} to hit with spell attacks). Rictavio has the following cleric spells prepared:"
 					],
 					"spells": {
 						"0": {
@@ -1870,9 +1871,9 @@
 						},
 						"1": {
 							"spells": [
+								"{@spell command}",
 								"{@spell cure wounds}",
 								"{@spell detect evil and good}",
-								"{@spell protection from evil and good}",
 								"{@spell sanctuary}"
 							],
 							"slots": 4
@@ -1935,7 +1936,7 @@
 				{
 					"name": "Sword Cane",
 					"entries": [
-						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6 + 1}) bludgeoning damage (wooden cane) or piercing damage (silvered sword)."
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6 + 1}) bludgeoning damage (wooden cane) or piercing damage (silvered sword)."
 					]
 				}
 			],
@@ -2034,12 +2035,618 @@
 							"type": "external",
 							"url": "https://images.kanka.io/user/RA3hjHNEUrFKt6EukRy8ELn1uoM=/smart/src/characters%2F9W7Q4a3byew2npPVpH7STx3mp1B8DUvlAGDLjR1X.jpeg"
 						}
+					},
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.pinimg.com/originals/95/b3/40/95b340cc5a3e6d054a38bfe1b3b8e85d.jpg"
+						}
 					}
 				]
 			},
 			"uniqueId": "5ff8eaf7-4105-4b4b-9975-b824df785102",
 			"damageTagsSpell": [
 				"R"
+			],
+			"legendaryHeader": [
+				"Rictavio can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. Rictavio regains spent legendary actions at the start of his turn."
+			],
+			"legendary": [
+				{
+					"name": "Attack",
+					"entries": [
+						"Rictavio makes a sword cane attack."
+					]
+				},
+				{
+					"name": "Move",
+					"entries": [
+						"Rictavio moves up to half his speed."
+					]
+				},
+				{
+					"name": "Cast a Spell (Costs 3 Actions)",
+					"entries": [
+						"Rictavio casts an spell of up to 2nd level."
+					]
+				}
+			],
+			"isNamedCreature": true
+		},
+		{
+			"name": "Ireena Kolyana (Sidekick)",
+			"isNpc": true,
+			"source": "CurseOfStrahdTwiceBitten",
+			"page": 44,
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"L",
+				"G"
+			],
+			"hp": {
+				"special": "25"
+			},
+			"size": [
+				"M"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item breastplate|phb}"
+					]
+				}
+			],
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 14,
+			"con": 11,
+			"int": 12,
+			"wis": 14,
+			"cha": 16,
+			"skill": {
+				"deception": "+5",
+				"insight": "+4",
+				"persuasion": "+5"
+			},
+			"passive": 12,
+			"languages": [
+				"Common",
+				"Elvish"
+			],
+			"action": [
+				{
+					"name": "Rapier",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d8 + 2}) piercing damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"Ireena adds 2 to its AC against one melee attack that would hit it. To do so, Ireena must see the attacker and be wielding a melee weapon."
+					]
+				},
+				{
+					"name": "Martial Role: Defender",
+					"entries": [
+						"Ireena can use her reaction to impose disadvantage on the attack roll of a creature within 5 feet of her whose target isn't Ireena, provided Ireena can see the attacker."
+					]
+				}
+			],
+			"actionTags": [
+				"Parry"
+			],
+			"languageTags": [
+				"C",
+				"E"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"tokenUrl": "https://5e.tools/img/CoS/Ireena%20Kolyana.png",
+			"uniqueId": "9cad2d74-ce6b-4c0d-b18d-39eaba697fc3",
+			"level": 4,
+			"save": {
+				"dex": "+4"
+			},
+			"isNamedCreature": true,
+			"bonus": [
+				{
+					"name": "Second Wind",
+					"entries": [
+						"Ireena can use a bonus action on her turn to regain hit points equal to {@dice 1d10} + her level in this class. Once she uses this feature, Ireena must finish a short or long rest before she can use it again."
+					]
+				}
+			],
+			"trait": [
+				{
+					"name": "Improved Critical",
+					"entries": [
+						"Ireena's attack rolls score a critical hit on a roll of 19 or 20 on the {@dice d20}."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Ireena, a striking young woman with auburn hair, has been bitten twice by Strahd. The villagers are afraid of her and avoid her. The characters are Ireena's best hope for protection, so she is willing to accompany them under certain conditions. Although she appears mild, she has a strong will, and she aids the party as best she can in saving herself. She doesn't remember her early past. She doesn't know how she came to Barovia or where she came from. Moreover, her encounters with Strahd are fuzzy memories, thanks to his vampiric charm, but she can recall clearly the blazing hunger in his eyes.",
+					"She tells the characters that wolves and other terrible creatures attacked the house night after night for weeks. The burgomaster's heart couldn't stand the constant assault, and he died three days ago. Strangely, since his death, the house has not come under attack.",
+					"She says that no one from the village has been brave enough to help Ismark take Kolyan Indirovich to the cemetery for proper burial. Ireena asks the characters if they would be so kind as to help Ismark deliver her father's body safely to Donavich, the local priest (area E5). She refuses to be taken to Vallaki or anywhere else while the burgomaster lies dead on the mansion floor."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5e.tools/img/adventure/CoS/017-cos03-05.png"
+						}
+					}
+				]
+			},
+			"shortName": "Ireena"
+		},
+		{
+			"name": "Izek Strazni (Vampire Spawn)",
+			"isNpc": true,
+			"source": "CurseOfStrahdTwiceBitten",
+			"page": 10,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "15d8 + 60",
+				"average": 127
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 18,
+			"con": 18,
+			"int": 10,
+			"wis": 9,
+			"cha": 15,
+			"skill": {
+				"intimidation": "+8",
+				"perception": "+2"
+			},
+			"passive": 12,
+			"languages": [
+				"Common"
+			],
+			"cr": "6",
+			"trait": [
+				{
+					"name": "Protected by Dark Powers (1/Day)",
+					"entries": [
+						"After Izek has taken damage, he magically calls {@dice 1d4} Hell Puppies. The called creatures arrive at initiative count 20 of the next round, acting as allies of Izek and obeying his spoken commands. The fiends remain for 1 hour, until Izek dies, or until he dismisses them as a bonus action."
+					]
+				},
+				{
+					"name": "Regeneration (Vampire Spawn)",
+					"entries": [
+						"Izek regains 10 hit points at the start of his turn if he has at least 1 hit point and isn't in sunlight or running water. If Izek takes radiant damage or damage from holy water, this trait doesn't function at the start of Izek's next turn."
+					]
+				},
+				{
+					"name": "Vampire Weakness (Vampire Spawn)",
+					"entries": [
+						"Izek has the following flaws:",
+						"{@i Forbiddance}. Izek can't enter a residence without an invitation from one of the occupants.",
+						"{@i Harmed by Running Water}. Izek takes 20 acid damage if it ends its turn in running water.",
+						"{@i Stake to the Heart}. If a piercing weapon made of wood is driven into Izek's heart while Izek is {@condition incapacitated} in his resting place, Izek is {@condition paralyzed} until the stake is removed.",
+						"{@i Sunlight Hypersensitivity}. Izek takes 20 radiant damage when he starts his turn in sunlight. While in sunlight, he has disadvantage on attack rolls and ability checks."
+					]
+				},
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"Izek can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Izek makes two attacks, only one of which can be a bite or hurl flame attack."
+					]
+				},
+				{
+					"name": "Hurl Flame",
+					"entries": [
+						"{@atk rs} {@hit 5} to hit, range 60 ft., one target. {@h}10 ({@damage 3d6}) fire damage. If the target is a flammable object that isn't being worn or carried, it catches fire."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one willing creature, or a creature that is {@condition grappled} by the vampire, {@condition incapacitated}, or {@condition restrained}. {@h}7 ({@damage 1d6 + 4}) piercing damage plus 7 ({@damage 2d6}) necrotic damage. The target's hit point maximum is reduced by an amount equal to the necrotic damage taken, and Izek regains hit points equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d4 + 4}) slashing damage. Instead of dealing damage, the vampire can grapple the target (escape {@dc 14})."
+					]
+				}
+			],
+			"traitTags": [
+				"Regeneration",
+				"Spider Climb"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"A",
+				"F",
+				"N",
+				"P",
+				"R",
+				"S"
+			],
+			"hasFluff": true,
+			"tokenUrl": "https://preview.redd.it/6zvy7ewnpdc71.png?width=1023&format=png&auto=webp&s=1122998b1077042a93ed8c830b2634822a42434d",
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"Izek and his sister were born in Vallaki. One morning, their father and their uncle took them fishing on Lake Zarovich. On the way back to town, a dire wolf attacked Izek and bit off his right arm. His father carried Izek back to town while his uncle distracted the beast. His sister ran and hid in the woods and was never seen again.",
+											"Unlike his sister, Izek was born without a soul. As time wore on, he forgot his lost sister and learned to cope with his disability.",
+											{
+												"name": "Orphaned Killer",
+												"type": "entries",
+												"entries": [
+													"Izek's parents succumbed to their grief, leaving him an orphan. He became a sociopath. Other children ruthlessly mocked him because of his dead family and his missing arm, but he was a large boy and had no trouble killing them and disposing of their bodies. He was eventually caught in the act and brought to the burgomaster. Instead of punishing the boy for his crimes, Baron Vallakovich pardoned Izek and took him into his home. Izek has been loyal to the burgomaster ever since, enjoying the power of his position and the comforts of his master's mansion. When he isn't enforcing the burgomaster's will, Izek drinks copious amounts of wine."
+												]
+											},
+											{
+												"name": "Fiendish Gift",
+												"type": "entries",
+												"entries": [
+													"After years of doing Baron Vallakovich's dirty work, Izek awakened from a drunken stupor one morning to find that he had grown a new arm to replace the one he had lost.",
+													"The new appendage has barbed spines, elongated fingers, and long nails. He can create fire with the snap of his fiendish fingers and has used the flames to put the fear of the devil in every Vallakian."
+												]
+											},
+											{
+												"name": "Doll Collector",
+												"type": "entries",
+												"entries": [
+													"Perhaps more disturbing than his fiendish arm and his murderous nature is Izek's collection of dolls, which he keeps in his bedroom in the burgomaster's mansion. Izek often has dreams of a beautiful young woman, and for years he has forced a local toymaker named Gadof Blinsky to craft dolls in her likeness. The woman is Ireena Kolyana, although Izek doesn't know her name."
+												]
+											},
+											{
+												"name": "Family Is Forever",
+												"type": "entries",
+												"entries": [
+													"Izek has dreams of Ireena. If he spots her, he tries to take her by force to the burgomaster's mansion. If he succeeds, he holds her captive in his bedroom (chapter 5, area N3j). Unknown to Izek and Ireena, they are brother and sister. Ireena fled after Izek was attacked by the dire wolf and became lost in the woods. She wandered for days in shock until she was found and adopted by Kolyan Indirovich in the village of Barovia. Izek covets her in an unwholesome way and won't allow anyone or anything to come between them."
+												]
+											}
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Izek Strazni's Traits",
+										"entries": [
+											{
+												"name": "Ideal",
+												"type": "entries",
+												"entries": [
+													"\"Fear is a powerful weapon. I use it to get what I want.\""
+												]
+											},
+											{
+												"name": "Bond",
+												"type": "entries",
+												"entries": [
+													"\"I am loyal to my master, Baron Vallakovich, for he brought me into his home. I owe him my life, but he isn't family.\""
+												]
+											},
+											{
+												"name": "Flaw",
+												"type": "entries",
+												"entries": [
+													"\"I would do anything, kill anything, to find my sister.\""
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://preview.redd.it/6zvy7ewnpdc71.png?width=1023&format=png&auto=webp&s=1122998b1077042a93ed8c830b2634822a42434d"
+						}
+					}
+				]
+			},
+			"isNamedCreature": true,
+			"uniqueId": "384fe489-56f5-4eee-80b8-89b055c1f094",
+			"shortName": "Izek",
+			"resist": [
+				"necrotic",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"miscTags": [
+				"MW",
+				"HPR"
+			]
+		},
+		{
+			"uniqueId": "d56ab51d-2acc-458d-80ac-26f30579cfa8",
+			"name": "Roland Deshain (Vampire Spawn)",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"source": "CurseOfStrahdTwiceBitten",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item shield|phb}",
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d8 + 24",
+				"average": 51
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 18,
+			"dex": 18,
+			"con": 18,
+			"int": 11,
+			"wis": 9,
+			"cha": 15,
+			"passive": 9,
+			"cr": "6",
+			"shortName": "Roland",
+			"page": 13,
+			"save": {
+				"wis": "+2",
+				"cha": "+5"
+			},
+			"skill": {
+				"athletics": "+7",
+				"medicine": "+2",
+				"religion": "+3",
+				"survival": "+2"
+			},
+			"resist": [
+				"necrotic",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Abyssal",
+				"Common",
+				"Elvish",
+				"Halfling"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"E",
+				"H"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Roland makes two attacks, only one of which can be a bite attack."
+					]
+				},
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 6}) slashing damage, or 9 ({@damage 1d10 + 6}) slashing damage if used with both hands."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d4 + 4}) slashing damage."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one willing creature, or a creature that is {@condition grappled} by the vampire, {@condition incapacitated}, or {@condition restrained}. {@h}7 ({@damage 1d6 + 4}) piercing damage, plus 7 ({@damage 2d6}) necrotic damage. The target's hit point maximum is reduced by an amount equal to the necrotic damage taken, and the vampire regains hit points equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0."
+					]
+				},
+				{
+					"name": "Dreadful Aspect",
+					"entries": [
+						"As an action, Roland channels the darkest emotions and focuses them into a burst of magical menace. Each creature of Roland's choice within 30 feet must make a Wisdom saving throw if it can see him. On a failed save, the target is {@condition frightened} of Roland for 1 minute. If a creature {@condition frightened} by this effect ends its turn more than 30 feet away from the paladin, it can attempt another Wisdom saving throw to end the effect on it."
+					]
+				}
+			],
+			"damageTags": [
+				"A",
+				"N",
+				"P",
+				"R",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"HPR"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"trait": [
+				{
+					"name": "Regeneration (Vampire Spawn)",
+					"entries": [
+						"Roland regains 10 hit points at the start of his turn if he has at least 1 hit point and isn't in sunlight or running water. If Roland takes radiant damage or damage from holy water, this trait doesn't function at the start of Roland's next turn."
+					]
+				},
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"Roland can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				},
+				{
+					"name": "Vampire Weakness (Vampire)",
+					"entries": [
+						"Roland has the following flaws:",
+						"{@i Forbiddance}. Roland can't enter a residence without an invitation from one of the occupants.",
+						"{@i Harmed by Running Water}. Roland takes 20 acid damage if he ends his turn in running water.",
+						"{@i Stake to the Heart}. If a piercing weapon made of wood is driven into Roland's heart while Roland is {@condition incapacitated} in his resting place, Roland is {@condition paralyzed} until the stake is removed.",
+						"{@i Sunlight Hypersensitivity}. Roland takes 20 radiant damage when he starts his turn in sunlight. While in sunlight, he has disadvantage on attack rolls and ability checks."
+					]
+				},
+				{
+					"name": "Fighting Style: Dueling",
+					"entries": [
+						"When Roland is wielding a melee weapon in one hand and no other weapons, he gains a +2 bonus to damage rolls with that weapon (included in the attack)."
+					]
+				}
+			],
+			"traitTags": [
+				"Regeneration",
+				"Spider Climb"
+			],
+			"isNpc": true,
+			"isNamedCreature": true,
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Roland is a 6th-level spellcaster. His spellcasting ability is Charisma (spell save {@dc 13}, {@hit 5} to hit with spell attacks). He has the following paladin spells prepared:"
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell command}",
+								"{@spell hellish rebuke}",
+								"{@spell inflict wounds}",
+								"{@spell searing smite}",
+								"{@spell shield of faith}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell branding smite} (necrotic)",
+								"{@spell crown of madness}",
+								"{@spell darkness}",
+								"{@spell find steed}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CP"
+			],
+			"damageTagsSpell": [
+				"F",
+				"N",
+				"R"
+			],
+			"conditionInflict": [
+				"frightened"
+			],
+			"fluff": {
+				"entries": [
+					"Roland never knew his parents, they were killed when he was a baby. Roland grew up on his uncle's farm, but he was restless. When the farm was ransacked by devil worshipers, Roland ran away to a large city, where he met a knight who had known his father. The knight was able to get Roland a job as a palace guard, but Roland was still restless and sought answers at the church of the Morninglord. A young cleric took Roland under his wing, and taught him what it meant to devote himself to Solos."
+				]
+			},
+			"bonus": [
+				{
+					"name": "Touch of the Damned",
+					"entries": [
+						"As a bonus action, when you make a claw or longsword attack you deal an additional 7 ({@damage 2d6}) necrotic damage."
+					]
+				}
 			]
 		}
 	]
