@@ -2648,6 +2648,150 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "Enormous Frog",
+			"source": "CurseOfStrahdTwiceBitten",
+			"page": 16,
+			"size": [
+				"L"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "14d10 + 70",
+				"average": 147
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 30
+			},
+			"str": 23,
+			"dex": 13,
+			"con": 20,
+			"int": 2,
+			"wis": 12,
+			"cha": 5,
+			"save": {
+				"con": "+9",
+				"wis": "+5"
+			},
+			"skill": {
+				"perception": "+9",
+				"stealth": "+5"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 19,
+			"resist": [
+				"fire",
+				"lightning"
+			],
+			"cr": "8",
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The frog can breathe air and water."
+					]
+				},
+				{
+					"name": "Shock Susceptibility",
+					"entries": [
+						"If the frog takes lightning damage, it suffers two effects until the end of its next turn: its speed is halved, and it has disadvantage on Dexterity saving throws."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The frog makes one Bite attack and one Tentacle attack, and it can use Tongue."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d8 + 6}) piercing damage, and the target is swallowed if it is a Medium or smaller creature. A swallowed creature is {@condition blinded} and {@condition restrained}, has total cover against attacks and other effects outside the frog, and takes 4 ({@damage 1d8}) acid damage at the start of each of the frog's turns.",
+						"The frog's gullet can hold up to two creatures at a time. If the frog takes 20 damage or more on a single turn from a creature inside it, the frog must succeed on a {@dc 20} Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, each of which falls {@condition prone} in a space within 10 feet of the frog. If the frog dies, any swallowed creature is no longer {@condition restrained} by it and can escape from the corpse using 10 feet of movement, exiting {@condition prone}."
+					]
+				},
+				{
+					"name": "Tentacle",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 20 ft., one target. {@h}13 ({@damage 2d6 + 6}) bludgeoning damage, and the target is {@condition grappled} (escape {@dc 16}) if it is a Large or smaller creature. Until the grapple ends, the frog can't use this tentacle on another target. The frog has one tentacle."
+					]
+				},
+				{
+					"name": "Tongue",
+					"entries": [
+						"The frog targets one Medium or smaller creature that it can see within 20 feet of it. The target must make a {@dc 18} Strength saving throw. On a failed save, the target is pulled into an unoccupied space within 5 feet of the frog."
+					]
+				}
+			],
+			"environment": [
+				"swamp",
+				"underdark"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/froghemoth.mp3"
+			},
+			"traitTags": [
+				"Amphibious"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Swallow",
+				"Tentacles"
+			],
+			"damageTags": [
+				"A",
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"blinded",
+				"grappled",
+				"restrained"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://5e.tools/img/MPMM/Froghemoth.png",
+			"fluff": {
+				"entries": [
+					"An Enormous frog is an amphibious predator as big as a Bear. It lairs in swamps and has one tentacle, a thick rubbery hide, a fang-filled maw with a prehensile tongue.",
+					"Enormous Frogs are creatures not of this world. A journal purportedly written long ago by the wizard Lum describes strange, cylindrical chambers of metal buried in the ground from which frogs emerged, but no reliable reports of the location of such places exist."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5e.tools/img/bestiary/MPMM/Froghemoth.webp"
+						}
+					}
+				]
+			},
+			"uniqueId": "a4f4685b-58bf-4d4e-a019-c98165cf75be"
 		}
 	]
 }
