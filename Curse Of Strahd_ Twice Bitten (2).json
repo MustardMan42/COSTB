@@ -815,7 +815,7 @@
 			"name": "Victor Vallakovich",
 			"isNpc": true,
 			"source": "CurseOfStrahdTwiceBitten",
-			"page": 105,
+			"page": 12,
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -1646,7 +1646,7 @@
 			"name": "Anastrasya Karelova",
 			"isNpc": true,
 			"source": "CurseOfStrahdTwiceBitten",
-			"page": 93,
+			"page": 6,
 			"size": [
 				"M"
 			],
@@ -1799,7 +1799,7 @@
 			],
 			"isNpc": true,
 			"source": "CurseOfStrahdTwiceBitten",
-			"page": 238,
+			"page": 14,
 			"size": [
 				"M"
 			],
@@ -2078,7 +2078,7 @@
 			"name": "Ireena Kolyana (Sidekick)",
 			"isNpc": true,
 			"source": "CurseOfStrahdTwiceBitten",
-			"page": 44,
+			"page": 11,
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -2202,7 +2202,7 @@
 			"name": "Izek Strazni (Vampire Spawn)",
 			"isNpc": true,
 			"source": "CurseOfStrahdTwiceBitten",
-			"page": 10,
+			"page": 15,
 			"size": [
 				"M"
 			],
@@ -2792,6 +2792,679 @@
 				]
 			},
 			"uniqueId": "a4f4685b-58bf-4d4e-a019-c98165cf75be"
+		},
+		{
+			"uniqueId": "a41721a4-682a-4a96-ab6a-d7c8ca46be5a",
+			"name": "Wendigo",
+			"size": [
+				"L"
+			],
+			"type": "fey",
+			"source": "CurseOfStrahdTwiceBitten",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"Natural Armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "18d10 + 54",
+				"average": 153
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 13,
+			"con": 16,
+			"int": 13,
+			"wis": 20,
+			"cha": 8,
+			"passive": 15,
+			"cr": "8",
+			"page": 17,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"telepathy"
+			],
+			"languageTags": [
+				"TP"
+			],
+			"save": {
+				"str": "+8",
+				"wis": "+8"
+			},
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Wendigo makes two claw attacks."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}16 ({@damage 2d10 + 5}) slashing damage, plus {@damage 1d8} poison damage."
+					]
+				}
+			],
+			"damageTags": [
+				"S"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The Wendigo has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"isNamedCreature": true,
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"poisoned"
+			],
+			"environment": [
+				"forest"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Wendigo casts one of the following spells, requiring no material components and using Wisdom as the spellcasting ability (spell save {@dc 16}):"
+					],
+					"will": [
+						"{@spell blight}",
+						"{@spell erupting earth|XGE}",
+						"{@spell sickening radiance|XGE} (poison instead of radiant damage)"
+					],
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"damageTagsSpell": [
+				"B",
+				"N",
+				"R"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn-az.allevents.in/events8/banners/9b784be7c305b2012c219963888e6523a8e0c3b190748fcec49c057fa87d0008-rimg-w503-h640-gmir.jpg?v=1582658021"
+						}
+					}
+				]
+			},
+			"skill": {
+				"athletics": "+8",
+				"survival": "+8",
+				"animal handling": "+8"
+			},
+			"legendaryHeader": [
+				"the following are Lair Actions that the Wendigo can take on initiative count 20, losing ties."
+			],
+			"conditionInflict": [
+				"frightened",
+				"paralyzed"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"variant": [
+				{
+					"name": "Wendigo Lair Actions",
+					"entries": [
+						"On initiative count 20 (losing initiative ties), the Wendigo can take a lair action to cause one of the following effects, but can't use the same effect two rounds in a row:",
+						{
+							"type": "entries",
+							"name": "Dreadful Glare",
+							"entries": [
+								"The Wendigo targets one creature it can see within 60 feet of it. If the target can see the Wendigo, it must succeed on a {@dc 16} Wisdom saving throw against this magic or become {@condition frightened} until the end of the Wendigo's next turn. If the target fails the saving throw by 5 or more, it is also {@condition paralyzed} for the same duration. A target that succeeds on the saving throw is immune to the Dreadful Glare of the Wendigo for the next 24 hours."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Thy Flesh Consumed",
+							"entries": [
+								"The Wendigo targets one creature it can see within so feet of it who has taken physical damage. If the target can see the Wendigo, it must succeed on a {@dc 16} Wisdom saving throw against this effect, or make unarmed bite attack(s) on the nearest creature. If the target fails the saving throw by 5 or more, it must make the unarmed strikes on itself at advantage."
+							]
+						}
+					],
+					"type": "variant",
+					"source": "CurseOfStrahdTwiceBitten",
+					"page": 17
+				}
+			]
+		},
+		{
+			"name": "Three-Armed Troll",
+			"source": "CurseOfStrahdTwiceBitten",
+			"page": 18,
+			"basicRules": true,
+			"size": [
+				"L"
+			],
+			"type": "giant",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "12d10 + 60",
+				"average": 126
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 13,
+			"con": 20,
+			"int": 7,
+			"wis": 9,
+			"cha": 7,
+			"skill": {
+				"perception": "+2"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 12,
+			"languages": [
+				"Giant"
+			],
+			"cr": "6",
+			"trait": [
+				{
+					"name": "Keen Smell",
+					"entries": [
+						"The troll has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The troll regains 10 hit points at the start of its turn. If the troll takes acid or fire damage, this trait doesn't function at the start of the troll's next turn. The troll dies only if it starts its turn with 0 hit points and doesn't regenerate."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The troll makes three attacks: one with its bite, one with its claws, and one with its maul."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage."
+					]
+				},
+				{
+					"name": "Maul",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}18 ({@damage 4d6 + 4}) bludgeoning damage."
+					]
+				}
+			],
+			"environment": [
+				"arctic",
+				"forest",
+				"hill",
+				"mountain",
+				"swamp",
+				"underdark"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/troll.mp3"
+			},
+			"traitTags": [
+				"Keen Senses",
+				"Regeneration"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"GI"
+			],
+			"damageTags": [
+				"B",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://5e.tools/img/MM/Troll.png",
+			"fluff": {
+				"name": "Troll",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Born with horrific appetites, trolls eat anything they can catch and devour. They have no society to speak of, but they do serve as mercenaries to orcs, ogres, ettins, hags, and giants. As payment, trolls demand food and treasure. Trolls are difficult to control, however, doing as they please even when working with more powerful creatures.",
+									{
+										"name": "Regeneration",
+										"type": "entries",
+										"entries": [
+											"Smashing a troll's bones and slashing through its rubbery hide only makes it angry. A troll's wounds close quickly. If the monster loses an arm, a leg, or even its head, those dismembered parts can sometimes act with a life of their own. A troll can even reattach severed body parts, untroubled by its momentary disability. Only acid and fire can arrest the regenerative properties of a troll's flesh. The trolls, enraged, will attack individuals making acid and fire attacks against them above all other prey."
+										]
+									},
+									{
+										"name": "Troll Freaks",
+										"type": "entries",
+										"entries": [
+											"Their regenerative capabilities make trolls especially susceptible to mutation. Although uncommon, such transformations can result from what the troll has done or what has been done to it. A decapitated troll might grow two heads from the stump of its neck, while a troll that eats a fey creature might gain one or more of that creature's traits."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Troll.jpg"
+						}
+					}
+				]
+			},
+			"uniqueId": "d3061957-ced1-447e-bca7-df47cde5cdad",
+			"shortName": "Three-Armed Troll",
+			"actionHeader": [
+				"If the Three Armed Troll is disarmed, it will make one bite attack and two claw attacks."
+			]
+		},
+		{
+			"name": "Morgantha",
+			"isNpc": true,
+			"source": "CurseOfStrahdTwiceBitten",
+			"page": 19,
+			"size": [
+				"M"
+			],
+			"type": "fiend",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 112,
+				"formula": "15d8 + 45"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 15,
+			"con": 16,
+			"int": 16,
+			"wis": 14,
+			"cha": 16,
+			"skill": {
+				"deception": "+6",
+				"insight": "+5",
+				"perception": "+5",
+				"stealth": "+5"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 16,
+			"resist": [
+				"cold",
+				"fire",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks that aren't silvered",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"charmed"
+			],
+			"languages": [
+				"Abyssal",
+				"Common",
+				"Infernal",
+				"Primordial"
+			],
+			"cr": {
+				"cr": "5",
+				"coven": "7"
+			},
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"Morgantha's innate spellcasting ability is Charisma (spell save {@dc 14}, {@hit 6} to hit with spell attacks). She can innately cast the following spells, requiring no material components:"
+					],
+					"will": [
+						"{@spell detect magic}",
+						"{@spell magic missile}"
+					],
+					"daily": {
+						"2e": [
+							"{@spell plane shift} (self only)",
+							"{@spell ray of enfeeblement}",
+							"{@spell sleep}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Shared Spellcasting (Coven only)",
+					"headerEntries": [
+						"While all three members of a hag coven are within 30 feet of one another, they can each cast the following spells from the wizard's spell list but must share the spell slots among themselves:"
+					],
+					"footerEntries": [
+						"For casting these spells, each hag is a 12th-level spellcaster that uses Intelligence as her spellcasting ability, (spell save {@dc 15}, {@hit 7} to hit with spell attacks)."
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell identify}",
+								"{@spell ray of sickness}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell hold person}",
+								"{@spell locate object}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell bestow curse}",
+								"{@spell counterspell}",
+								"{@spell lightning bolt}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell phantasmal killer}",
+								"{@spell polymorph}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell contact other plane}",
+								"{@spell scrying}"
+							],
+							"slots": 2
+						},
+						"6": {
+							"spells": [
+								"{@spell eyebite}"
+							],
+							"slots": 1
+						}
+					},
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Morgantha has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Night Hag Items",
+					"entries": [
+						"A night hag carries two very rare magic items that she must craft for herself. If either object is lost, the night hag will go to great lengths to retrieve it, as creating a new tool takes time and effort.",
+						"Heartstone: This lustrous black gem allows a night hag to become ethereal while it is in her possession. The touch of a heartstone also cures any disease. Crafting a heartstone takes 30 days.",
+						"Soul Bag: When an evil humanoid dies as a result of a night hag's Nightmare Haunting, Morgantha catches the soul in this black sack made of stitched flesh. A soul bag can hold only one evil soul at a time, and only the night hag who crafted the bag can catch a soul with it. Crafting a soul bag takes 7 days and a humanoid sacrifice (whose flesh is used to make the bag)."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Claws (Hag Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) slashing damage."
+					]
+				},
+				{
+					"name": "Change Shape",
+					"entries": [
+						"Morgantha magically polymorphs into a Small or Medium female humanoid, or back into her true form. Her statistics are the same in each form. Any equipment she is wearing or carrying isn't transformed. She reverts to her true form if she dies."
+					]
+				},
+				{
+					"name": "Etherealness",
+					"entries": [
+						"Morgantha magically enters the Ethereal Plane from the Material Plane, or vice versa. To do so, Morgantha must have a heartstone in her possession."
+					]
+				},
+				{
+					"name": "Nightmare Haunting (1/Day)",
+					"entries": [
+						"While on the Ethereal Plane, Morgantha magically touches a sleeping humanoid on the Material Plane. A {@spell protection from evil and good} spell cast on the target prevents this contact, as does a magic circle. As long as the contact persists, the target has dreadful visions. If these visions last for at least 1 hour, the target gains no benefit from its rest, and its hit point maximum is reduced by 5 ({@dice 1d10}). If this effect reduces the target's hit point maximum to 0, the target dies, and if the target was evil, its soul is trapped in Morgantha's soul bag. The reduction to the target's hit point maximum lasts until removed by the  {@spell greater restoration} spell or similar magic."
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Shapechanger"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"I",
+				"P"
+			],
+			"damageTags": [
+				"S"
+			],
+			"damageTagsSpell": [
+				"I",
+				"L",
+				"N",
+				"O",
+				"Y"
+			],
+			"spellcastingTags": [
+				"I",
+				"S",
+				"CW"
+			],
+			"miscTags": [
+				"MW",
+				"HPR"
+			],
+			"conditionInflictSpell": [
+				"frightened",
+				"paralyzed",
+				"poisoned",
+				"unconscious"
+			],
+			"tokenUrl": "https://5e.tools/img/CoS/Morgantha.png",
+			"uniqueId": "50779835-8b33-4e3e-ba42-caec5e3b94c2",
+			"legendaryGroup": {
+				"name": "Night Hag",
+				"source": "MM"
+			},
+			"variant": [
+				{
+					"name": "Hag Covens",
+					"entries": [
+						"When hags must work together, they form covens, in spite of their selfish natures. A coven is made up of hags of any type, all of whom are equals within the group. However, each of the hags continues to desire more personal power.",
+						"A coven consists of three hags so that any arguments between two hags can be settled by the third. If more than three hags ever come together, as might happen if two covens come into conflict, the result is usually chaos.",
+						{
+							"type": "spellcasting",
+							"name": "Shared Spellcasting (Coven Only)",
+							"headerEntries": [
+								"While all three members of a hag coven are within 30 feet of one another, they can each cast the following spells from the wizard's spell list but must share the spell slots among themselves:"
+							],
+							"spells": {
+								"1": {
+									"slots": 4,
+									"spells": [
+										"{@spell identify}",
+										"{@spell ray of sickness}"
+									]
+								},
+								"2": {
+									"slots": 3,
+									"spells": [
+										"{@spell hold person}",
+										"{@spell locate object}"
+									]
+								},
+								"3": {
+									"slots": 3,
+									"spells": [
+										"{@spell bestow curse}",
+										"{@spell counterspell}",
+										"{@spell lightning bolt}"
+									]
+								},
+								"4": {
+									"slots": 3,
+									"spells": [
+										"{@spell phantasmal killer}",
+										"{@spell polymorph}"
+									]
+								},
+								"5": {
+									"slots": 2,
+									"spells": [
+										"{@spell contact other plane}",
+										"{@spell scrying}"
+									]
+								},
+								"6": {
+									"slots": 1,
+									"spells": [
+										"{@spell eyebite}"
+									]
+								}
+							},
+							"footerEntries": [
+								"For casting these spells, each hag is a 12th-level spellcaster that uses Intelligence as her spellcasting ability. The spell save DC is 12 + the hag's Intelligence modifier, and the spell attack bonus is 4 + the hag's Intelligence modifier."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Hag Eye",
+							"entries": [
+								"A hag coven can craft a magic item called a hag eye, which is made from a real eye coated in varnish and often fitted to a pendant or other wearable item. The hag eye is usually entrusted to a minion for safekeeping and transport. A hag in the coven can take an action to see what the hag eye sees if the hag eye is on the same plane of existence. A hag eye has AC 10, 1 hit point, and darkvision with a radius of 60 feet. If it is destroyed, each coven member takes {@dice 3d10} psychic damage and is {@condition blinded} for 24 hours.",
+								"A hag coven can have only one hag eye at a time, and creating a new one requires all three members of the coven to perform a ritual. The ritual takes 1 hour, and the hags can't perform it while {@condition blinded}. During the ritual, if the hags take any action other than performing the ritual, they must start over."
+							]
+						}
+					],
+					"type": "variant"
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Morgnatha is the leader of the primary Hag Coven in Barovia. The hags are trapped in Barovia, but they like it here. Using their Change Shape action to look like Barovian women—a frumpy mother and her two homely daughters—the hags snatch children, devour them, and use the windmill's grindstone to crush their little bones into powder. This powder is a key ingredient in the hags' dream pastries, which they offer to Barovian adults who are desperate to escape Strahd's domain.",
+					"Morgantha tolerates her daughters (Bella Sunbane and Offalia Wormwiggle) only because they help her complete the coven. If one of them dies, Morgantha sets out to abduct and consume a human child so that she can give birth to a new daughter (as described in the Monster Manual).",
+					"Morgantha gave her coven's hag eye to Cyrus Belview, Strahd's disfigured manservant (see chapter 4, area K62), so that she could spy on Castle Ravenloft and keep an eye on the vampire. The hags are fearful of Strahd and respect his dominion over this land. For more information on the hag eye, see the hags entry in the Monster Manual.",
+					"Morgantha doesn't mind visitors, as long as they've come to do business. She tries to sell her latest batch of dream pastries, charging 1 gp for each one. She's proud of her confections and claims that she uses only the finest ingredients. If the characters seem uninterested in her wares, she bellows, \"Begone!\" If they attack or refuse to leave, she calls out to her daughters and turns to fight."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5e.tools/img/adventure/CoS/074-cos06-04.png"
+						}
+					}
+				]
+			}
 		}
 	]
 }
