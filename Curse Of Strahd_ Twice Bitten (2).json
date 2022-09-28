@@ -3467,234 +3467,6 @@
 			}
 		},
 		{
-			"name": "Dullahan",
-			"source": "CurseOfStrahdTwiceBitten",
-			"page": 20,
-			"size": [
-				"M"
-			],
-			"type": "undead",
-			"ac": [
-				{
-					"ac": 16,
-					"from": [
-						"{@item breastplate|PHB}"
-					]
-				}
-			],
-			"hp": {
-				"average": 135,
-				"formula": "18d8 + 54"
-			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 18,
-			"dex": 14,
-			"con": 16,
-			"int": 11,
-			"wis": 15,
-			"cha": 16,
-			"save": {
-				"con": "+7"
-			},
-			"skill": {
-				"perception": "+6"
-			},
-			"senses": [
-				"truesight 120 ft."
-			],
-			"passive": 16,
-			"resist": [
-				"cold",
-				"lightning",
-				"poison"
-			],
-			"conditionImmune": [
-				"charmed",
-				"frightened",
-				"poisoned"
-			],
-			"languages": [
-				"understands the languages it knew in life but can't speak"
-			],
-			"cr": "10",
-			"trait": [
-				{
-					"name": "Headless Summoning (Recharges after a Short or Long Rest)",
-					"entries": [
-						"If the dullahan is reduced to 0 hit points, it doesn't die or fall {@condition unconscious}. Instead, it regains 97 hit points. In addition, it summons three {@creature death's head|VRGR|death's heads}, one of each type, in unoccupied spaces within 5 feet of it. The death's heads are under the dullahan's control and act immediately after the dullahan in the initiative order. Additionally, the dullahan can now use the options in the \"Mythic Actions\" section. Award a party an additional 5,900 XP (11,800 XP total) for defeating the dullahan after it uses Headless Summoning."
-					]
-				},
-				{
-					"name": "Legendary Resistance (2/Day)",
-					"entries": [
-						"If the dullahan fails a saving throw, it can choose to succeed instead."
-					]
-				},
-				{
-					"name": "Unusual Nature",
-					"entries": [
-						"The dullahan doesn't require air, food, drink, or sleep."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"The dullahan makes two attacks."
-					]
-				},
-				{
-					"name": "Battleaxe",
-					"entries": [
-						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) slashing damage, or 9 ({@damage 1d10 + 4}) slashing damage if used with two hands, plus 11 ({@damage 2d10}) necrotic damage. If the dullahan scores a critical hit against a creature, the target must succeed on a {@dc 15} Constitution saving throw or the dullahan cuts off the target's head. The target dies if it can't survive without the lost head. A creature that doesn't have or need a head, or has legendary actions, instead takes an extra 27 ({@damage 6d8}) slashing damage."
-					]
-				},
-				{
-					"name": "Fiery Skull",
-					"entries": [
-						"{@atk rs} {@hit 7} to hit, range 120 ft., one target. {@h}14 ({@damage 2d10 + 3}) fire damage."
-					]
-				}
-			],
-			"legendary": [
-				{
-					"name": "Attack",
-					"entries": [
-						"The dullahan makes one attack."
-					]
-				},
-				{
-					"name": "Frightful Presence (Costs 2 Actions)",
-					"entries": [
-						"Each creature of the dullahan's choice within 30 feet of it must succeed on a {@dc 15} Wisdom saving throw or become {@condition frightened} of the dullahan until the end of its next turn."
-					]
-				},
-				{
-					"name": "Head Hunt (Costs 3 Actions)",
-					"entries": [
-						"The dullahan moves up to its speed without provoking opportunity attacks and makes one Battleaxe attack with advantage. If the attack hits, but is not a critical hit, the attack deals an extra 27 ({@damage 6d8}) necrotic damage."
-					]
-				}
-			],
-			"mythic": [
-				{
-					"name": "",
-					"entries": [
-						"If the dullahan's Headless Summoning trait is active, it can use the options below as legendary actions."
-					]
-				},
-				{
-					"name": "Coordinated Assault",
-					"entries": [
-						"The dullahan makes a Battleaxe attack, and then one {@creature death's head|VRGR} the dullahan can see within 30 feet of it can use its reaction to make a melee attack."
-					]
-				},
-				{
-					"name": "Headless Wail (Costs 2 Actions)",
-					"entries": [
-						"An echoing shriek issues from the dullahan's headless stump. Each creature of the dullahan's choice within 10 feet of it must make a {@dc 15} Wisdom saving throw. Each creature takes 16 ({@damage 3d10}) psychic damage on a failed save, or half as much damage on a successful one. If one or more creatures fail the saving throw, the dullahan gains 10 temporary hit points."
-					]
-				}
-			],
-			"traitTags": [
-				"Legendary Resistances",
-				"Unusual Nature"
-			],
-			"senseTags": [
-				"U"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"CS",
-				"LF"
-			],
-			"damageTags": [
-				"F",
-				"N",
-				"S",
-				"Y"
-			],
-			"miscTags": [
-				"MW"
-			],
-			"conditionInflict": [
-				"frightened"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true,
-			"tokenUrl": "https://5e.tools/img/VRGR/Dullahan.png",
-			"fluff": {
-				"name": "Dullahan",
-				"source": "VRGR",
-				"entries": [
-					{
-						"type": "entries",
-						"entries": [
-							"Dullahans are headless undead warriors—the remains of villains who let vengeance consume them. These decapitated hunters haunt the areas where they were slain, butchering innocents in search of their severed heads or to quench their thirst for revenge.",
-							"Wicked knights or commanders in life, dullahans adhere to twisted codes of chivalry or soldiership. These fallen champions consider a specific location their battlefield. This gives rise to stories of haunted battlegrounds, ruins, roads, river crossings and other strategic locations where a dullahan continues a terrifying campaign against the living. In death, dullahans are often rejoined by those who followed them in life, either in the form of lesser undead, like skeletons or wights, or terrifying mounts, like warhorse skeletons or nightmares."
-						]
-					},
-					{
-						"type": "section",
-						"entries": [
-							{
-								"type": "entries",
-								"name": "Headless Hunts",
-								"entries": [
-									"Dullahans are known for seeking their lost heads, giving rise to regional legends of headless hunters and endless searches. The Dullahan Legends table suggests dullahan hauntings that might be the stuff of local legends.",
-									{
-										"type": "table",
-										"caption": "Dullahan Legends",
-										"colLabels": [
-											"d4",
-											"Haunting"
-										],
-										"colStyles": [
-											"col-2 text-center",
-											"col-10"
-										],
-										"rows": [
-											[
-												"1",
-												"A dullahan pursues anyone who has one of the shards of its shattered skull."
-											],
-											[
-												"2",
-												"A vain dullahan pursues it own relatives, seeking to claim a head with its family resemblance."
-											],
-											[
-												"3",
-												"A greedy dullahan seeks to recover its bejeweled helmet, caring nothing for the head that wears it."
-											],
-											[
-												"4",
-												"Two dullahans seek the same head, both believing they're the actual owner."
-											]
-										]
-									}
-								]
-							}
-						]
-					}
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "internal",
-							"path": "bestiary/VRGR/Dullahan.jpg"
-						}
-					}
-				]
-			},
-			"uniqueId": "839e7272-023d-4451-873e-05dad2f63c66"
-		},
-		{
 			"name": "Divebomb Vulture",
 			"source": "CurseOfStrahdTwiceBitten",
 			"page": 21,
@@ -3911,7 +3683,7 @@
 				{
 					"name": "Web {@recharge 5}",
 					"entries": [
-						"{@atk rw} {@hit 5} to hit, range 30/60 ft., one creature. {@h}The target is {@condition restrained} by webbing. As an action, the {@condition restrained} target can make a {@dc 12} Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 5; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage)."
+						"{@atk rw} {@hit 8} to hit, range 30/60 ft., one creature. {@h}The target is {@condition restrained} by webbing. As an action, the {@condition restrained} target can make a {@dc 14} Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 12; hp 15; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage)."
 					]
 				}
 			],
@@ -4003,6 +3775,187 @@
 				"deafened",
 				"paralyzed",
 				"poisoned"
+			]
+		},
+		{
+			"name": "Bone Whip Dullahan",
+			"source": "CurseOfStrahdTwiceBitten",
+			"page": 20,
+			"basicRules": true,
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item chain shirt|phb|chain shirt}"
+					]
+				}
+			],
+			"hp": {
+				"average": 45,
+				"formula": "6d8 + 18"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 14,
+			"con": 16,
+			"int": 10,
+			"wis": 13,
+			"cha": 15,
+			"skill": {
+				"perception": "+3",
+				"stealth": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 13,
+			"resist": [
+				"necrotic",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks that aren't silvered",
+					"cond": true
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			],
+			"languages": [
+				"the languages it knew in life"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the wight has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The dullahan makes two bone whip attacks or two lantern blast attacks. It can use its Life Drain in place of one bone whip attack."
+					]
+				},
+				{
+					"name": "Life Drain",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one creature. {@h}5 ({@damage 1d6 + 2}) necrotic damage. The target must succeed on a {@dc 13} Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.",
+						"A humanoid slain by this attack rises 24 hours later as a {@creature zombie} under the dullahan's control, unless the humanoid is restored to life or its body is destroyed. The dullahan can have no more than twelve zombies under its control at one time."
+					]
+				},
+				{
+					"name": "Bone Whip",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 10 ft., one target. {@h}8 ({@damage 1d10 + 3}) slashing damage."
+					]
+				},
+				{
+					"name": "Lantern Blast",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 100/400 ft., one target. {@h}7 ({@damage 1d10 + 2}) fire damage."
+					]
+				}
+			],
+			"environment": [
+				"desert",
+				"swamp",
+				"underdark",
+				"urban"
+			],
+			"traitTags": [
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"damageTags": [
+				"F",
+				"N",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"HPR",
+				"RCH",
+				"RW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://5e.tools/img/VRGR/Dullahan.png",
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Dullahans are headless undead warriors—the remains of villains who let vengeance consume them. These decapitated hunters haunt the areas where they were slain, butchering innocents in search of their severed heads or to quench their thirst for revenge.",
+									"Wicked knights or commanders in life, dullahans adhere to twisted codes of chivalry or soldiership. These fallen champions consider a specific location their battlefield. This gives rise to stories of haunted battlegrounds, ruins, roads, river crossings and other strategic locations where a dullahan continues a terrifying campaign against the living. In death, dullahans are often rejoined by those who followed them in life, either in the form of lesser undead, like skeletons or wights, or terrifying mounts, like warhorse skeletons or nightmares.",
+									{},
+									{},
+									{
+										"name": "Undead Nature",
+										"type": "entries",
+										"entries": [
+											"A dullahan doesn't require air, food, drink, or sleep."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://dmdave.com/wp-content/uploads/2019/09/dullahan-large-2930409520-1568677604227.jpg"
+						}
+					}
+				]
+			},
+			"uniqueId": "406db7dd-6739-4eff-8255-f1cd3726a62b",
+			"shortName": "Dullahan",
+			"variant": [
+				{
+					"name": "Mounted Dullahan",
+					"entries": [
+						"Many dullahan will appear riding an undead steed. In such cases, follow the following rules, using the {@creature Warhorse Skeleton} stat block.",
+						"The {@creature Warhorse Skeleton} has an AC of 13, a speed of 60 ft., and 22 HP. It can make attacks with its hooves, it has a {@hit 6} to hit and deals {@damage 2d6 + 4} bludgeoning damage on a hit.",
+						"The dullahan's mount shares its initiative, on the dullahan's turn it may direct its mount to move, and take one of the following actions: {@action attack}, {@action dash}, {@action dodge}, or {@action disengage}.",
+						"If the dullahan is unseated from the mount, it falls {@condition prone} on the ground, and the mount is free to take actions of its own, including attacks. "
+					],
+					"type": "variant"
+				}
 			]
 		}
 	]
