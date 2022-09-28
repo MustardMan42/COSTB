@@ -3465,6 +3465,545 @@
 					}
 				]
 			}
+		},
+		{
+			"name": "Dullahan",
+			"source": "CurseOfStrahdTwiceBitten",
+			"page": 20,
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item breastplate|PHB}"
+					]
+				}
+			],
+			"hp": {
+				"average": 135,
+				"formula": "18d8 + 54"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 14,
+			"con": 16,
+			"int": 11,
+			"wis": 15,
+			"cha": 16,
+			"save": {
+				"con": "+7"
+			},
+			"skill": {
+				"perception": "+6"
+			},
+			"senses": [
+				"truesight 120 ft."
+			],
+			"passive": 16,
+			"resist": [
+				"cold",
+				"lightning",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"poisoned"
+			],
+			"languages": [
+				"understands the languages it knew in life but can't speak"
+			],
+			"cr": "10",
+			"trait": [
+				{
+					"name": "Headless Summoning (Recharges after a Short or Long Rest)",
+					"entries": [
+						"If the dullahan is reduced to 0 hit points, it doesn't die or fall {@condition unconscious}. Instead, it regains 97 hit points. In addition, it summons three {@creature death's head|VRGR|death's heads}, one of each type, in unoccupied spaces within 5 feet of it. The death's heads are under the dullahan's control and act immediately after the dullahan in the initiative order. Additionally, the dullahan can now use the options in the \"Mythic Actions\" section. Award a party an additional 5,900 XP (11,800 XP total) for defeating the dullahan after it uses Headless Summoning."
+					]
+				},
+				{
+					"name": "Legendary Resistance (2/Day)",
+					"entries": [
+						"If the dullahan fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Unusual Nature",
+					"entries": [
+						"The dullahan doesn't require air, food, drink, or sleep."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The dullahan makes two attacks."
+					]
+				},
+				{
+					"name": "Battleaxe",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) slashing damage, or 9 ({@damage 1d10 + 4}) slashing damage if used with two hands, plus 11 ({@damage 2d10}) necrotic damage. If the dullahan scores a critical hit against a creature, the target must succeed on a {@dc 15} Constitution saving throw or the dullahan cuts off the target's head. The target dies if it can't survive without the lost head. A creature that doesn't have or need a head, or has legendary actions, instead takes an extra 27 ({@damage 6d8}) slashing damage."
+					]
+				},
+				{
+					"name": "Fiery Skull",
+					"entries": [
+						"{@atk rs} {@hit 7} to hit, range 120 ft., one target. {@h}14 ({@damage 2d10 + 3}) fire damage."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Attack",
+					"entries": [
+						"The dullahan makes one attack."
+					]
+				},
+				{
+					"name": "Frightful Presence (Costs 2 Actions)",
+					"entries": [
+						"Each creature of the dullahan's choice within 30 feet of it must succeed on a {@dc 15} Wisdom saving throw or become {@condition frightened} of the dullahan until the end of its next turn."
+					]
+				},
+				{
+					"name": "Head Hunt (Costs 3 Actions)",
+					"entries": [
+						"The dullahan moves up to its speed without provoking opportunity attacks and makes one Battleaxe attack with advantage. If the attack hits, but is not a critical hit, the attack deals an extra 27 ({@damage 6d8}) necrotic damage."
+					]
+				}
+			],
+			"mythic": [
+				{
+					"name": "",
+					"entries": [
+						"If the dullahan's Headless Summoning trait is active, it can use the options below as legendary actions."
+					]
+				},
+				{
+					"name": "Coordinated Assault",
+					"entries": [
+						"The dullahan makes a Battleaxe attack, and then one {@creature death's head|VRGR} the dullahan can see within 30 feet of it can use its reaction to make a melee attack."
+					]
+				},
+				{
+					"name": "Headless Wail (Costs 2 Actions)",
+					"entries": [
+						"An echoing shriek issues from the dullahan's headless stump. Each creature of the dullahan's choice within 10 feet of it must make a {@dc 15} Wisdom saving throw. Each creature takes 16 ({@damage 3d10}) psychic damage on a failed save, or half as much damage on a successful one. If one or more creatures fail the saving throw, the dullahan gains 10 temporary hit points."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances",
+				"Unusual Nature"
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"CS",
+				"LF"
+			],
+			"damageTags": [
+				"F",
+				"N",
+				"S",
+				"Y"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"frightened"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://5e.tools/img/VRGR/Dullahan.png",
+			"fluff": {
+				"name": "Dullahan",
+				"source": "VRGR",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"Dullahans are headless undead warriors—the remains of villains who let vengeance consume them. These decapitated hunters haunt the areas where they were slain, butchering innocents in search of their severed heads or to quench their thirst for revenge.",
+							"Wicked knights or commanders in life, dullahans adhere to twisted codes of chivalry or soldiership. These fallen champions consider a specific location their battlefield. This gives rise to stories of haunted battlegrounds, ruins, roads, river crossings and other strategic locations where a dullahan continues a terrifying campaign against the living. In death, dullahans are often rejoined by those who followed them in life, either in the form of lesser undead, like skeletons or wights, or terrifying mounts, like warhorse skeletons or nightmares."
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Headless Hunts",
+								"entries": [
+									"Dullahans are known for seeking their lost heads, giving rise to regional legends of headless hunters and endless searches. The Dullahan Legends table suggests dullahan hauntings that might be the stuff of local legends.",
+									{
+										"type": "table",
+										"caption": "Dullahan Legends",
+										"colLabels": [
+											"d4",
+											"Haunting"
+										],
+										"colStyles": [
+											"col-2 text-center",
+											"col-10"
+										],
+										"rows": [
+											[
+												"1",
+												"A dullahan pursues anyone who has one of the shards of its shattered skull."
+											],
+											[
+												"2",
+												"A vain dullahan pursues it own relatives, seeking to claim a head with its family resemblance."
+											],
+											[
+												"3",
+												"A greedy dullahan seeks to recover its bejeweled helmet, caring nothing for the head that wears it."
+											],
+											[
+												"4",
+												"Two dullahans seek the same head, both believing they're the actual owner."
+											]
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/VRGR/Dullahan.jpg"
+						}
+					}
+				]
+			},
+			"uniqueId": "839e7272-023d-4451-873e-05dad2f63c66"
+		},
+		{
+			"name": "Divebomb Vulture",
+			"source": "CurseOfStrahdTwiceBitten",
+			"page": 21,
+			"basicRules": true,
+			"size": [
+				"L"
+			],
+			"type": "beast",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 38,
+				"formula": "4d10 + 16"
+			},
+			"speed": {
+				"walk": 10,
+				"fly": 60
+			},
+			"str": 19,
+			"dex": 14,
+			"con": 19,
+			"int": 6,
+			"wis": 12,
+			"cha": 7,
+			"skill": {
+				"perception": "+4"
+			},
+			"passive": 14,
+			"languages": [
+				"understands Common but can't speak"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Keen Sight and Smell",
+					"entries": [
+						"The vulture has advantage on Wisdom ({@skill Perception}) checks that rely on sight or smell."
+					]
+				},
+				{
+					"name": "Flyby",
+					"entries": [
+						"The divebomb vulture doesn't provoke opportunity attacks when it flies out of an enemy's reach."
+					]
+				},
+				{
+					"name": "Dive Attack",
+					"entries": [
+						"If the divebomb vulture is flying and dives at least 30 feet straight toward a target and then hits it with a melee weapon attack, the attack deals an extra 3 ({@dice 1d6}) damage to the target."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The divebomb vulture makes two attacks: one with its beak and one with its talons."
+					]
+				},
+				{
+					"name": "Beak",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d4 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Talons",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) slashing damage, and it is {@condition grappled} (escape {@dc 14}). Until this grapple ends, the target is {@condition restrained}. The divebomb vulture can grapple only one target at a time."
+					]
+				}
+			],
+			"environment": [
+				"desert",
+				"grassland"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/giant-vulture.mp3"
+			},
+			"traitTags": [
+				"Flyby",
+				"Keen Senses"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"CS"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"tokenUrl": "https://5e.tools/img/MM/Giant Vulture.png",
+			"fluff": {
+				"name": "Giant Vulture",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"A giant vulture has advanced intelligence and a malevolent bent. Unlike its smaller kin, it will attack a wounded creature to hasten its end. Giant vultures have been known to haunt a thirsty, starving creature for days to enjoy its suffering."
+								]
+							}
+						]
+					}
+				]
+			},
+			"uniqueId": "2ef7147e-c9ce-49e7-ab9a-be504836b5f1",
+			"conditionInflict": [
+				"restrained"
+			]
+		},
+		{
+			"name": "Giant Burrowing Spider",
+			"source": "CurseOfStrahdTwiceBitten",
+			"page": 22,
+			"size": [
+				"H"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 95,
+				"formula": "10d12 + 30"
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30,
+				"burrow": 30
+			},
+			"str": 20,
+			"dex": 14,
+			"con": 16,
+			"int": 6,
+			"wis": 12,
+			"cha": 4,
+			"skill": {
+				"stealth": "+8"
+			},
+			"senses": [
+				"tremorsense 60 ft."
+			],
+			"passive": 11,
+			"cr": "7",
+			"trait": [
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"The deep spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				},
+				{
+					"name": "Web Sense",
+					"entries": [
+						"While in contact with a web, the deep spider knows the exact location of any other creature in contact with the same web."
+					]
+				},
+				{
+					"name": "Web Walker",
+					"entries": [
+						"The deep spider ignores movement restrictions caused by webbing."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The giant burrowing spider makes two foreleg attacks and one bite attack."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d8 + 5}) piercing damage, and the target must make a {@dc 14} Constitution saving throw, taking 10 ({@damage 3d6}) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but {@condition poisoned} for 1 hour, even after regaining hit points, and is {@condition paralyzed} while {@condition poisoned} in this way."
+					]
+				},
+				{
+					"name": "Foreleg",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) slashing damage."
+					]
+				},
+				{
+					"name": "Web {@recharge 5}",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 30/60 ft., one creature. {@h}The target is {@condition restrained} by webbing. As an action, the {@condition restrained} target can make a {@dc 12} Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 5; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage)."
+					]
+				}
+			],
+			"traitTags": [
+				"Spider Climb",
+				"Web Sense",
+				"Web Walker"
+			],
+			"senseTags": [
+				"T"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"I",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"conditionInflict": [
+				"paralyzed",
+				"poisoned",
+				"restrained"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://5e.tools/img/MaBJoV/Deep Spider.png",
+			"fluff": {
+				"name": "Deep Spider",
+				"source": "MaBJoV",
+				"entries": [
+					"Sword spiders are a type of giant arachnid that stalk the forests and caverns of Faerûn, walking on legs that resemble razor-sharp blades. These solitary predators move incredibly fast and with great stealth for their large size. The sword spider's sleek, 12-foot-long body is encased in a durable black exoskeleton covered in fine dark hairs. Although their eyesight is poor, sword spiders locate their prey using {@sense tremorsense|MM} to feel for minute vibrations in the ground.",
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Natural Weapons",
+										"entries": [
+											"All eight legs of a sword spider end in thick chitinous plates with serrated ridges. However, its primary weapons are its front two legs, which look like a pair of massive curved swords. Its victims are impaled upon these limbs and brought close enough for the spider to deliver its poisonous bite. Once slain, its prey is then chopped up into manageable morsels that can be fed into its cavernous maw lined with multiple rows of crooked fangs."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Death From Above",
+										"entries": [
+											"Rather than trapping its food within a pre-constructed web, sword spiders prefer to wait for prey high up in tree branches and on cavern walls. (Despite their large frames, sword spiders retain the ability to cling to most surfaces, making them adept climbers.) Once it spots its prey, the spider sprays the creature with a restraining web and drops down with all eight of its lethal legs extended to impale its meal. When hunting in areas not conducive to this strategy, sword spiders instead stalk and chase their prey like big cats and are able to leap forward up to 30 feet, lashing out with their forelimbs."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Deep Spiders",
+										"entries": [
+											"Sword spiders are native to the jungles of Mhair on the Chultan Peninsula in southwest Faerûn. Drow traders brought them to the Underdark where they were bred for use in battle under the control of Lolthite priestesses. These variants are called deep spiders and many have since escaped their pens and, with the ability to tolerate a wide range of climates, adapted quickly to their new subterranean homes. These creatures soon spread throughout the Underdark with many finding their way to the surface."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MaBJoV/Sword Spider.webp"
+						}
+					}
+				]
+			},
+			"uniqueId": "ad2aa1de-8d9b-4b79-b574-2bffb81a317e",
+			"save": {
+				"str": "+8",
+				"con": "+6"
+			},
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"blinded",
+				"deafened",
+				"paralyzed",
+				"poisoned"
+			]
 		}
 	]
 }
