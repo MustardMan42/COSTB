@@ -2807,7 +2807,7 @@
 			],
 			"ac": [
 				{
-					"ac": 18,
+					"ac": 17,
 					"from": [
 						"Natural Armor"
 					]
@@ -2865,11 +2865,12 @@
 				{
 					"name": "Claws",
 					"entries": [
-						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}16 ({@damage 2d10 + 5}) slashing damage, plus {@damage 1d8} poison damage."
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d8 + 5}) slashing damage, plus 4 ({@damage 1d8}) poison damage."
 					]
 				}
 			],
 			"damageTags": [
+				"I",
 				"S"
 			],
 			"actionTags": [
@@ -2906,11 +2907,12 @@
 					"headerEntries": [
 						"The Wendigo casts one of the following spells, requiring no material components and using Wisdom as the spellcasting ability (spell save {@dc 16}):"
 					],
-					"will": [
-						"{@spell blight}",
-						"{@spell erupting earth|XGE}",
-						"{@spell sickening radiance|XGE} (poison instead of radiant damage)"
-					],
+					"daily": {
+						"1": [
+							"{@spell blight}",
+							"{@spell erupting earth|XGE}"
+						]
+					},
 					"ability": "wis",
 					"type": "spellcasting"
 				}
@@ -2920,8 +2922,7 @@
 			],
 			"damageTagsSpell": [
 				"B",
-				"N",
-				"R"
+				"N"
 			],
 			"fluff": {
 				"images": [
@@ -2940,7 +2941,7 @@
 				"animal handling": "+8"
 			},
 			"legendaryHeader": [
-				"the following are Lair Actions that the Wendigo can take on initiative count 20, losing ties."
+				"The wendigo can take 2 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The wendigo regains spent legendary actions at the start of its turn."
 			],
 			"conditionInflict": [
 				"frightened",
@@ -2965,7 +2966,7 @@
 							"type": "entries",
 							"name": "Thy Flesh Consumed",
 							"entries": [
-								"The Wendigo targets one creature it can see within so feet of it who has taken physical damage. If the target can see the Wendigo, it must succeed on a {@dc 16} Wisdom saving throw against this effect, or make unarmed bite attack(s) on the nearest creature. If the target fails the saving throw by 5 or more, it must make the unarmed strikes on itself at advantage."
+								"The Wendigo targets one creature it can see within so feet of it who has taken physical damage. If the target can see the Wendigo, it must succeed on a {@dc 16} Wisdom saving throw against this effect, or take {@damage 2d6} piercing damage."
 							]
 						}
 					],
@@ -2973,7 +2974,22 @@
 					"source": "CurseOfStrahdTwiceBitten",
 					"page": 17
 				}
-			]
+			],
+			"legendary": [
+				{
+					"name": "Nature's Bane",
+					"entries": [
+						"The wendigo makes an attack using its claws."
+					]
+				},
+				{
+					"name": "Bloodthirsty Leap",
+					"entries": [
+						"The wendigo moves up to half its speed toward a creature. This movement doesn't provoke opportunity attacks."
+					]
+				}
+			],
+			"legendaryActions": 2
 		},
 		{
 			"name": "Three-Armed Troll",
@@ -3513,7 +3529,7 @@
 				{
 					"name": "Keen Sight and Smell",
 					"entries": [
-						"The vulture has advantage on Wisdom ({@skill Perception}) checks that rely on sight or smell."
+						"The divebomb vulture has advantage on Wisdom ({@skill Perception}) checks that rely on sight or smell."
 					]
 				},
 				{
@@ -3645,19 +3661,19 @@
 				{
 					"name": "Spider Climb",
 					"entries": [
-						"The deep spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+						"The giant burrowing spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
 					]
 				},
 				{
 					"name": "Web Sense",
 					"entries": [
-						"While in contact with a web, the deep spider knows the exact location of any other creature in contact with the same web."
+						"While in contact with a web, the giant burrowing spider knows the exact location of any other creature in contact with the same web."
 					]
 				},
 				{
 					"name": "Web Walker",
 					"entries": [
-						"The deep spider ignores movement restrictions caused by webbing."
+						"The giant burrowing spider ignores movement restrictions caused by webbing."
 					]
 				}
 			],
@@ -3846,7 +3862,7 @@
 				{
 					"name": "Sunlight Sensitivity",
 					"entries": [
-						"While in sunlight, the wight has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+						"While in sunlight, the dullahan has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
 					]
 				}
 			],
@@ -3957,6 +3973,163 @@
 					"type": "variant"
 				}
 			]
+		},
+		{
+			"name": "Barovian Druid",
+			"source": "CurseOfStrahdTwiceBitten",
+			"page": 23,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				11,
+				{
+					"ac": 16,
+					"condition": "with {@spell barkskin}",
+					"braces": true
+				}
+			],
+			"hp": {
+				"formula": "6d8 + 6",
+				"average": 33
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 12,
+			"con": 13,
+			"int": 12,
+			"wis": 17,
+			"cha": 11,
+			"skill": {
+				"medicine": "+4",
+				"nature": "+3",
+				"perception": "+4"
+			},
+			"passive": 14,
+			"languages": [
+				"Druidic plus any two languages"
+			],
+			"cr": "3",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The druid is a 5th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 13}, {@hit 5} to hit with spell attacks). It has the following druid spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell druidcraft}",
+								"{@spell produce flame}",
+								"{@spell shillelagh}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell entangle}",
+								"{@spell longstrider}",
+								"{@spell speak with animals}",
+								"{@spell thunderwave}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell animal messenger}",
+								"{@spell barkskin}",
+								"{@spell summon beast|TCE}"
+							],
+							"slots": 3
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"action": [
+				{
+					"name": "Quarterstaff",
+					"entries": [
+						"{@atk mw} {@hit 2} to hit ({@hit 5} to hit with shillelagh), reach 5 ft., one target. {@h}3 ({@damage 1d6}) bludgeoning damage, 4 ({@damage 1d8}) bludgeoning damage if wielded with two hands, or 7 ({@damage 1d8 + 3}) bludgeoning damage with {@spell shillelagh}."
+					]
+				}
+			],
+			"environment": [
+				"arctic",
+				"coastal",
+				"desert",
+				"forest",
+				"grassland",
+				"hill",
+				"mountain",
+				"swamp",
+				"underdark"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/druid.mp3"
+			},
+			"languageTags": [
+				"DU",
+				"X"
+			],
+			"damageTags": [
+				"B"
+			],
+			"damageTagsSpell": [
+				"F",
+				"T"
+			],
+			"spellcastingTags": [
+				"CD"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://5e.tools/img/MM/Druid.png",
+			"fluff": {
+				"name": "Druid",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Druids dwell in forests and other secluded wilderness locations, where they protect the natural world from monsters and the encroachment of civilization. Some are tribal shamans who heal the sick, pray to animal spirits, and provide spiritual guidance."
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Druid.jpg"
+						}
+					}
+				]
+			},
+			"uniqueId": "c252e5cd-af19-4a61-a098-41e68bc86b57",
+			"save": {
+				"wis": "+5"
+			}
 		}
 	]
 }
