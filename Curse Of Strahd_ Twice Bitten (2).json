@@ -2859,7 +2859,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The Wendigo makes two claw attacks."
+						"The wendigo makes two claw attacks."
 					]
 				},
 				{
@@ -2880,7 +2880,7 @@
 				{
 					"name": "Magic Resistance",
 					"entries": [
-						"The Wendigo has advantage on saving throws against spells and other magical effects."
+						"The wendigo has advantage on saving throws against spells and other magical effects."
 					]
 				}
 			],
@@ -2905,7 +2905,7 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"The Wendigo casts one of the following spells, requiring no material components and using Wisdom as the spellcasting ability (spell save {@dc 16}):"
+						"The wendigo casts one of the following spells, requiring no material components and using Wisdom as the spellcasting ability (spell save {@dc 16}):"
 					],
 					"daily": {
 						"1": [
@@ -2954,19 +2954,26 @@
 				{
 					"name": "Wendigo Lair Actions",
 					"entries": [
-						"On initiative count 20 (losing initiative ties), the Wendigo can take a lair action to cause one of the following effects, but can't use the same effect two rounds in a row:",
+						"On initiative count 20 (losing initiative ties), the wendigo can take a lair action to cause one of the following effects, but can't use the same effect two rounds in a row:",
 						{
 							"type": "entries",
 							"name": "Dreadful Glare",
 							"entries": [
-								"The Wendigo targets one creature it can see within 60 feet of it. If the target can see the Wendigo, it must succeed on a {@dc 16} Wisdom saving throw against this magic or become {@condition frightened} until the end of the Wendigo's next turn. If the target fails the saving throw by 5 or more, it is also {@condition paralyzed} for the same duration. A target that succeeds on the saving throw is immune to the Dreadful Glare of the Wendigo for the next 24 hours."
+								"The wendigo targets one creature it can see within 60 feet of it. If the target can see the wendigo, it must succeed on a {@dc 16} Wisdom saving throw against this magic or become {@condition frightened} until the end of the wendigo's next turn. If the target fails the saving throw by 5 or more, it is also {@condition paralyzed} for the same duration. A target that succeeds on the saving throw is immune to the Dreadful Glare of the wendigo for the next 24 hours."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Unto the Earth",
+							"entries": [
+								"The wendigo reaches forth its claw and summons {@creature Swarm of Maggots|VRGR} from the earth. The {@creature Swarm of Maggots|VRGR} rolls initiative and follows the wendigo's instructions."
 							]
 						},
 						{
 							"type": "entries",
 							"name": "Thy Flesh Consumed",
 							"entries": [
-								"The Wendigo targets one creature it can see within so feet of it who has taken physical damage. If the target can see the Wendigo, it must succeed on a {@dc 16} Wisdom saving throw against this effect, or take {@damage 2d6} piercing damage."
+								"The wendigo targets one creature it can see within so feet of it who has taken physical damage. If the target can see the wendigo, it must succeed on a {@dc 16} Wisdom saving throw against this effect, or take {@damage 2d6} piercing damage."
 							]
 						}
 					],
