@@ -4274,7 +4274,7 @@
 		{
 			"name": "Zombie Plague Bloater",
 			"source": "CurseOfStrahdTwiceBitten",
-			"page": 255,
+			"page": 28,
 			"size": [
 				"M"
 			],
@@ -4643,6 +4643,821 @@
 				]
 			},
 			"uniqueId": "905b2390-bb2d-4f3e-b505-f9abb03276fa"
+		},
+		{
+			"name": "Krystofor Taltos (lvl 4)",
+			"source": "CurseOfStrahdTwiceBitten",
+			"page": 26,
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item chain mail|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "24d8 + 96",
+				"average": 204
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 14,
+			"con": 18,
+			"int": 13,
+			"wis": 16,
+			"cha": 18,
+			"save": {
+				"str": "+7",
+				"con": "+7",
+				"wis": "+6",
+				"cha": "+7"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 13,
+			"resist": [
+				"necrotic",
+				"psychic"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"poisoned",
+				"stunned"
+			],
+			"languages": [
+				"Common",
+				"Draconic"
+			],
+			"cr": "7",
+			"trait": [
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The revenant regains 10 hit points at the start of its turn. If the revenant takes fire or radiant damage, this trait doesn't function at the start of the revenant's next turn. The revenant's body is destroyed only if it starts its turn with 0 hit points and doesn't regenerate."
+					]
+				},
+				{
+					"name": "Rejuvenation",
+					"entries": [
+						"When the revenant's body is destroyed, its soul lingers. After 24 hours, the soul inhabits and animates another humanoid corpse on the same plane of existence and regains all its hit points. While the soul is bodiless, a {@spell wish} spell can be used to force the soul to go to the afterlife and not return."
+					]
+				},
+				{
+					"name": "Turn Immunity",
+					"entries": [
+						"The revenant is immune to effects that turn undead."
+					]
+				},
+				{
+					"name": "Vengeful Tracker",
+					"entries": [
+						"The revenant knows the distance to and direction of any creature against which it seeks revenge, even if the creature and the revenant are on different planes of existence. If the creature being tracked by the revenant dies, the revenant knows."
+					]
+				},
+				{
+					"name": "Powered by Hatred",
+					"entries": [
+						"Any weapon the revenant wields is considered a magical +1 weapon when calculating the attack roll and damage (included in the action)."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The revenant makes two halberd attacks."
+					]
+				},
+				{
+					"name": "Halberd",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}11 ({@damage 1d10 + 5}) slashing damage. If the target is a creature against which the revenant has sworn vengeance, the target takes an extra 14 ({@damage 4d6}) bludgeoning damage."
+					]
+				}
+			],
+			"variant": [
+				{
+					"type": "variant",
+					"name": "Revenants with Spells and Weapons",
+					"entries": [
+						"Revenants that were spellcasters before they died might retain some or all of their spellcasting capabilities. Similarly, revenants that wore armor and wielded weapons in life might continue to do so."
+					]
+				}
+			],
+			"environment": [
+				"arctic",
+				"desert",
+				"forest",
+				"hill",
+				"swamp",
+				"urban"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/revenant.mp3"
+			},
+			"traitTags": [
+				"Regeneration",
+				"Rejuvenation",
+				"Turn Immunity"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"damageTags": [
+				"B",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://5e.tools/img/MM/Revenant.png",
+			"fluff": {
+				"name": "Revenant",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"A revenant forms from the soul of a mortal who met a cruel and undeserving fate. It claws its way back into the world to seek revenge against the one who wronged it. The revenant reclaims its mortal body and superficially resembles a zombie. However, instead of lifeless eyes, a revenant's eyes burn with resolve and flare in the presence of its adversary. If the revenant's original body was destroyed or is otherwise unavailable, the spirit of the revenant enters another humanoid corpse. Regardless of the body the revenant uses as a vessel, its adversary always recognizes the revenant for what it truly is.",
+									{
+										"type": "entries",
+										"name": "Hunger for Revenge",
+										"entries": [
+											"A revenant has only one year to exact revenge. When its adversary dies, or if the revenant fails to kill its adversary before its time runs out, it crumbles to dust and its soul fades into the afterlife. If its foe is too powerful for the revenant to destroy on its own, it seeks worthy allies to help it fulfill its quest."
+										]
+									},
+									{
+										"name": "Divine Justice",
+										"type": "entries",
+										"entries": [
+											"No magic can hide a creature pursued by a revenant, which always knows the direction and distance between it and the target of its vengeance. In cases where the revenant seeks revenge against more than one adversary, it pursues them one at a time, starting with the creature that dealt it the killing blow. If the revenant's body is destroyed, its soul flies forth to seek out a new corpse in which to resume its hunt."
+										]
+									},
+									{
+										"name": "Undead Nature",
+										"type": "entries",
+										"entries": [
+											"A revenant doesn't require air, food, drink, or sleep."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Revenant.jpg"
+						}
+					}
+				]
+			},
+			"uniqueId": "b0adc83a-f317-4d80-8ebe-f4c8f21cb358",
+			"conditionInflict": [
+				"frightened",
+				"paralyzed"
+			],
+			"isNpc": true,
+			"isNamedCreature": true,
+			"legendaryActions": 2,
+			"legendaryHeader": [
+				"The revenant can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The revenant regains spent legendary actions at the start of its turn."
+			],
+			"legendary": [
+				{
+					"name": "Halberd",
+					"entries": [
+						"The revenant makes one attack with its halberd."
+					]
+				},
+				{
+					"name": "Vengeful Stare",
+					"entries": [
+						"The revenant targets one creature it can see within 30 feet of it and against which it has sworn vengeance. The target must make a {@dc 15} Wisdom saving throw. On a failure, the target is {@condition paralyzed} until the revenant deals damage to it, or until the end of the revenant's next turn. When the paralysis ends, the target is {@condition frightened} of the revenant for 1 minute. The {@condition frightened} target can repeat the saving throw at the end of each of its turns, with disadvantage if it can see the revenant, ending the {@condition frightened} condition on itself on a success."
+					]
+				}
+			]
+		},
+		{
+			"name": "Explosive Flameskull",
+			"source": "CurseOfStrahdTwiceBitten",
+			"page": 27,
+			"basicRules": true,
+			"size": [
+				"T"
+			],
+			"type": "undead",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"average": 40,
+				"formula": "9d4 + 18"
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 40,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 1,
+			"dex": 17,
+			"con": 14,
+			"int": 16,
+			"wis": 10,
+			"cha": 11,
+			"skill": {
+				"arcana": "+5",
+				"perception": "+2"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 12,
+			"resist": [
+				"lightning",
+				"necrotic",
+				"piercing"
+			],
+			"immune": [
+				"cold",
+				"fire",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"paralyzed",
+				"poisoned",
+				"prone"
+			],
+			"languages": [
+				"Common"
+			],
+			"cr": "4",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The flameskull is a 5th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 13}, {@hit 5} to hit with spell attacks). It requires no somatic or material components to cast its spells. The flameskull has the following wizard spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell mage hand}"
+							]
+						},
+						"1": {
+							"slots": 3,
+							"spells": [
+								"{@spell magic missile}",
+								"{@spell shield}"
+							]
+						},
+						"2": {
+							"slots": 2,
+							"spells": [
+								"{@spell blur}",
+								"{@spell flaming sphere}"
+							]
+						},
+						"3": {
+							"slots": 1,
+							"spells": [
+								"{@spell fireball}"
+							]
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Illumination",
+					"entries": [
+						"The flameskull sheds either dim light in a 15-foot radius, or bright light in a 15-foot radius and dim light for an additional 15 feet. It can switch between the options as an action."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The flameskull has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Rejuvenation",
+					"entries": [
+						"If the flameskull is destroyed, it regains all its hit points in 1 hour unless holy water is sprinkled on its remains or a {@spell dispel magic} or {@spell remove curse} spell is cast on them."
+					]
+				},
+				{
+					"name": "Wrath Beyond Death",
+					"entries": [
+						"If the Flameskull is destroyed, while it still has a third level spell slot, the Flameskull immediately casts fireball as a reaction, centered on itself. If no third level spell slot is available, the Flameskull casts magic missile upcast at either 1st or 2nd level."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The flameskull uses Fire Ray twice."
+					]
+				},
+				{
+					"name": "Fire Ray",
+					"entries": [
+						"{@atk rs} {@hit 5} to hit, range 30 ft., one target. {@h}10 ({@damage 3d6}) fire damage."
+					]
+				}
+			],
+			"environment": [
+				"underdark"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/flameskull.mp3"
+			},
+			"traitTags": [
+				"Illumination",
+				"Magic Resistance",
+				"Rejuvenation"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"F"
+			],
+			"damageTagsSpell": [
+				"F",
+				"O"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"miscTags": [
+				"AOE"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://5e.tools/img/MM/Flameskull.png",
+			"fluff": {
+				"name": "Flameskull",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Blazing green flames and mad, echoing laughter follow a disembodied skull as it patrols its demesne. When the undead flameskull discovers trespassers, it blasts the intruders with fiery rays from its eyes and dreadful spells called up from the dark recesses of its memory.",
+									"Dark spellcasters fashion flameskulls from the remains of dead wizards. When the ritual is complete, green flames erupt from the skull to complete its ghastly transformation.",
+									{
+										"name": "Legacy of Life",
+										"type": "entries",
+										"entries": [
+											"A flameskull only dimly recalls its former life. Though it might speak in its old voice and recount key events from its past, it is but an echo of its former self. However, its undead transformation grants it full access to the magic it wielded in life, letting it cast spells while ignoring the material and somatic components it can no longer employ."
+										]
+									},
+									{
+										"name": "Eternally Bound",
+										"type": "entries",
+										"entries": [
+											"Intelligent and vigilant, a flameskull serves its creator by protecting a hidden treasure hoard, a secret chamber, or a specific individual. A flameskull carries out the directives given to it when it was created, and it interprets those commands to the letter. A flameskull's master must craft its instructions with care to ensure that the creature carries out its tasks properly.",
+											{
+												"name": "Wreathed in Flame",
+												"entries": [
+													" The fire wreathing a flameskull burns continually, giving off bright light that the creature controls. It uses those flames as a weapon, focusing them to loose them as fiery rays from its eye sockets."
+												],
+												"type": "entries"
+											}
+										]
+									},
+									{
+										"name": "Eldritch Rejuvenation",
+										"type": "entries",
+										"entries": [
+											"A flameskull's shattered fragments reform unless they are splashed with holy water or subjected to a {@spell dispel magic} or {@spell remove curse} spell. If it can no longer fulfill its intended purpose, the re-formed flameskull is beholden to no one and becomes autonomous."
+										]
+									},
+									{
+										"name": "Undead Nature",
+										"type": "entries",
+										"entries": [
+											"A flameskull doesn't require air, food, drink, or sleep"
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Flameskull.png"
+						}
+					}
+				]
+			},
+			"uniqueId": "8a703f5a-10e0-4a3a-9ed9-096e0d98257e"
+		},
+		{
+			"name": "Werewolf (Frenzied)",
+			"group": [
+				"Lycanthropes"
+			],
+			"source": "CurseOfStrahdTwiceBitten",
+			"page": 29,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"shapechanger"
+				]
+			},
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 170,
+				"formula": "20d8 + 80"
+			},
+			"speed": {
+				"walk": {
+					"number": 30,
+					"condition": "(40 ft. in hybrid form, 50 ft. in dire wolf form)"
+				}
+			},
+			"str": 18,
+			"dex": 18,
+			"con": 18,
+			"int": 14,
+			"wis": 16,
+			"cha": 16,
+			"save": {
+				"dex": "+9",
+				"con": "+9",
+				"cha": "+8"
+			},
+			"skill": {
+				"perception": "+13",
+				"stealth": "+9"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 23,
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"languages": [
+				"Common (can't speak in wolf form)"
+			],
+			"cr": "11",
+			"trait": [
+				{
+					"name": "Blood Frenzy",
+					"entries": [
+						"The werewolf has advantage on attack rolls against a creature that doesn't have all its hit points."
+					]
+				},
+				{
+					"name": "Legendary Resistance (1/Day)",
+					"entries": [
+						"When the werewolf fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The werewolf regains 10 hit points at the start of each of its turns. If the werewolf takes damage from a silver weapon, this trait doesn't function at the start of the werewolf's next turn. The werewolf dies only if it starts its turn with 0 hit points and doesn't regenerate."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The werewolf makes two attacks: one with its Bite and one with its Claws (dire wolf or hybrid form)."
+					]
+				},
+				{
+					"name": "Bite (Dire Wolf or Hybrid Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) piercing damage plus 14 ({@damage 4d6}) necrotic damage."
+					]
+				},
+				{
+					"name": "Claws (Dire Wolf or Hybrid Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage. If the target is a creature, it must succeed on a {@dc 17} Strength saving throw or be knocked {@condition prone}."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Change Shape",
+					"entries": [
+						"The werewolf polymorphs into a Large wolf-humanoid hybrid or into a Large dire wolf, or back into its true form, which appears humanoid. Its statistics, other than its size and speed, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Swipe",
+					"entries": [
+						"The werewolf makes one Claws attack."
+					]
+				},
+				{
+					"name": "Mauling Pounce (Costs 2 Actions)",
+					"entries": [
+						"The werewolf moves up to its speed without provoking opportunity attacks, and it can make one Claws attack (dire wolf or hybrid form only) against each creature it moves past."
+					]
+				},
+				{
+					"name": "Ravenous Hunger (Costs 3 Actions)",
+					"entries": [
+						"The werewolf changes into hybrid or dire wolf form and then makes one Bite attack."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances",
+				"Regeneration"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Shapechanger"
+			],
+			"languageTags": [
+				"C",
+				"CS"
+			],
+			"damageTags": [
+				"N",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://5e.tools/img/VRGR/Loup Garou.png",
+			"fluff": {
+				"name": "Loup Garou",
+				"source": "VRGR",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"Loup garou possess a strain of lycanthropy more virulent than that carried by common werewolves. Aside from being deadlier than their werewolf cousins, loup garou aggressively spread the plague of lycanthropy. Only through the death of a loup garou might those afflicted by it escape their curse."
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Loup Garou Lycanthropy",
+								"entries": [
+									"A Humanoid who succumbs to a loup garou's lycanthropy becomes a werewolf. This form of lycanthropy can't be removed while the loup garou that inflicted the curse lives. See the {@i Monster Manual} for details on lycanthropy.",
+									"Once a loup garou is slain, a {@spell remove curse} spell cast during the night of a full moon on any afflicted werewolf it created forces the target to make a DC 17 Constitution saving throw. On a success, the curse is broken, and the target returns to its normal form and gains 3 levels of exhaustion. On a failure, the curse remains, and the target automatically fails any saving throw made to break this curse for 1 month."
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/VRGR/Loup Garou.jpg"
+						}
+					}
+				]
+			},
+			"uniqueId": "d0061af2-38e7-4b5f-8a14-d7724cff23f8"
+		},
+		{
+			"name": "Anastrasya Karelova (lvl 2)",
+			"isNpc": true,
+			"source": "CurseOfStrahdTwiceBitten",
+			"page": 6,
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "17d8 + 51",
+				"average": 127
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 16,
+			"con": 16,
+			"int": 17,
+			"wis": 15,
+			"cha": 18,
+			"save": {
+				"dex": "+8",
+				"wis": "+7",
+				"cha": "+9"
+			},
+			"skill": {
+				"perception": "+7",
+				"stealth": "+8"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 15,
+			"resist": [
+				"necrotic",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"languages": [
+				"the languages it knew in life"
+			],
+			"cr": "13",
+			"trait": [
+				{
+					"name": "Regeneration",
+					"entries": [
+						"Anastrasya regains 10 hit points at the start of its turn if it has at least 1 hit point and isn't in sunlight or running water. If Anastrasya takes radiant damage or damage from holy water, this trait doesn't function at the start of Anastrasya's next turn."
+					]
+				},
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"Anastrasya can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				},
+				{
+					"name": "Vampire Weaknesses",
+					"entries": [
+						"Anastrasya has the following flaws:",
+						"{@i Forbiddance.} Anastrasya can't enter a residence without an invitation from one of the occupants.",
+						"{@i Harmed by Running Water.} Anastrasya takes 20 acid damage when it ends its turn in running water.",
+						"{@i Stake to the Heart.} Anastrasya is destroyed if a piercing weapon made of wood is driven into its heart while it is {@condition incapacitated} in its resting place.",
+						"{@i Sunlight Hypersensitivity.} Anastrasya takes 20 radiant damage when it starts its turn in sunlight. While in sunlight, it has disadvantage on attack rolls and ability checks."
+					]
+				},
+				{
+					"name": "Shapechanger (Vampire)",
+					"entries": [
+						"If Anastrasya isn't in sunlight or running water, she can use her action to polymorph into a Tiny bat or a Medium cloud of mist, or back into her true form. While in bat form, Anastrasya can't speak, her walking speed is 5 feet, and it has a flying speed of 30 feet. Her statistics, other than her size and speed, are unchanged. Anything she is wearing transforms with her, but nothing she is carrying does. She reverts to her true form if she dies. While in mist form, Anastrasya can't take any actions, speak, or manipulate objects. She is weightless, has a flying speed of 20 feet, can hover, and can enter a hostile creature's space and stop there. In addition, if air can pass through a space, the mist can do so without squeezing, and it can't pass through water. She has advantage on Strength, Dexterity, and Constitution saving throws, and she is immune to all nonmagical damage, except the damage she takes from sunlight."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Anastrasya makes two attacks, only one of which can be a bite attack."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one willing creature, or a creature that is {@condition grappled} by Anastrasya, {@condition incapacitated}, or {@condition restrained}. {@h}6 ({@damage 1d6 + 3}) piercing damage plus 7 ({@damage 2d6}) necrotic damage. The target's hit point maximum is reduced by an amount equal to the necrotic damage taken, and Anastrasya regains hit points equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one creature. {@h}8 ({@damage 2d4 + 3}) slashing damage. Instead of dealing damage, Anastrasya can grapple the target (escape {@dc 13})."
+					]
+				}
+			],
+			"traitTags": [
+				"Regeneration",
+				"Shapechanger",
+				"Spider Climb",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"damageTags": [
+				"N",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"HPR"
+			],
+			"tokenUrl": "https://5e.tools/img/CoS/Anastrasya Karelova.png",
+			"uniqueId": "93f46eb2-fd7e-4b0c-b23e-9728b910c7c2",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdnb.artstation.com/p/assets/images/images/035/565/917/large/yllia-de-xiloscient-anastrasia-portrait-artstation.jpg?1615304560"
+						}
+					}
+				]
+			}
 		}
 	]
 }
