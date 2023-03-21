@@ -6082,7 +6082,19 @@
 			],
 			"passive": 13,
 			"resist": [
-				"psychic"
+				{
+					"resist": [
+						"psychic"
+					]
+				},
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
 			],
 			"immune": [
 				"fire",
@@ -6106,31 +6118,31 @@
 				{
 					"name": "Regeneration",
 					"entries": [
-						"The revenant regains 10 hit points at the start of its turn. If the revenant takes radiant damage, this trait doesn't function at the start of the revenant's next turn. The revenant's body is destroyed only if it starts its turn with 0 hit points and doesn't regenerate."
+						"Krystofor regains 10 hit points at the start of its turn. If Krystofor takes radiant damage, this trait doesn't function at the start of the his next turn. The Krystofor's body is destroyed only if he starts his turn with 0 hit points and doesn't regenerate."
 					]
 				},
 				{
 					"name": "Rejuvenation",
 					"entries": [
-						"When the revenant's body is destroyed, its soul lingers. After 24 hours, the soul inhabits and animates another humanoid corpse on the same plane of existence and regains all its hit points. While the soul is bodiless, a {@spell wish} spell can be used to force the soul to go to the afterlife and not return."
+						"When Krystofor's body is destroyed, its soul lingers. After 24 hours, the soul inhabits and animates another humanoid corpse on the same plane of existence and regains all its hit points. While the soul is bodiless, a {@spell wish} spell can be used to force the soul to go to the afterlife and not return."
 					]
 				},
 				{
 					"name": "Turn Immunity",
 					"entries": [
-						"The revenant is immune to effects that turn undead."
+						"Krystofor is immune to effects that turn undead."
 					]
 				},
 				{
 					"name": "Vengeful Tracker",
 					"entries": [
-						"The revenant knows the distance to and direction of any creature against which it seeks revenge, even if the creature and the revenant are on different planes of existence. If the creature being tracked by the revenant dies, the revenant knows."
+						"Krystofor knows the distance to and direction of any creature against which it seeks revenge, even if the creature and Krystofor  are on different planes of existence. If the creature being tracked by Krystofor dies, Krystofor knows."
 					]
 				},
 				{
 					"name": "Powered by Hatred",
 					"entries": [
-						"Any weapon the revenant wields is considered a magical +1 weapon when calculating the attack roll and damage (included in the action)."
+						"Any weapon Krystofor wields is considered a magical +1 weapon when calculating the attack roll and damage (included in the action)."
 					]
 				},
 				{
@@ -6144,25 +6156,19 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The revenant makes three attacks, one with its bite, and two with its claws. When its tail sweep is available, it can use that in place of its bite or its claws."
+						"Krystofor makes three attacks with his shortsword, or two attacks with his heavy crossbow"
 					]
 				},
 				{
-					"name": "Bite",
+					"name": "Shortsword",
 					"entries": [
-						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d4 + 6}) piercing damage."
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d6 + 7}) slashing damage."
 					]
 				},
 				{
-					"name": "Claws",
+					"name": "Heavy Crossbow",
 					"entries": [
-						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d6 + 6}) slashing damage."
-					]
-				},
-				{
-					"name": "Tail Sweep {@recharge 4}",
-					"entries": [
-						"The revenant sweeps its tail in a 15-foot cone. Each creature in that area must make a {@dc 18} Dexterity saving throw, taking 25 ({@damage 3d12 + 6}) bludgeoning damage on a failed save, or half as much damage on a successful one."
+						"{@atk rw} {@hit 8} to hit, range 100/400 ft., one target. {@h}9 ({@damage 1d10 + 4}) piercing damage."
 					]
 				}
 			],
@@ -6195,7 +6201,6 @@
 				"DR"
 			],
 			"damageTags": [
-				"B",
 				"P",
 				"S"
 			],
@@ -6257,25 +6262,25 @@
 			"isNamedCreature": true,
 			"legendaryActions": 3,
 			"legendaryHeader": [
-				"The revenant can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The revenant regains spent legendary actions at the start of its turn."
+				"Krystofor can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. Krystofor regains spent legendary actions at the start of its turn."
 			],
 			"legendary": [
 				{
 					"name": "Claws",
 					"entries": [
-						"The revenant makes one attack with its claws."
+						"Krystofor  makes one attack with its shortsword."
 					]
 				},
 				{
 					"name": "Vengeful Stare",
 					"entries": [
-						"The revenant targets one creature it can see within 30 feet of it and against which it has sworn vengeance. The target must make a {@dc 15} Wisdom saving throw. On a failure, the target is {@condition paralyzed} until the revenant deals damage to it, or until the end of the revenant's next turn. When the paralysis ends, the target is {@condition frightened} of the revenant for 1 minute. The {@condition frightened} target can repeat the saving throw at the end of each of its turns, with disadvantage if it can see the revenant, ending the {@condition frightened} condition on itself on a success."
+						"Krystofor targets one creature it can see within 30 feet of it and against which he has sworn vengeance. The target must make a {@dc 15} Wisdom saving throw. On a failure, the target is {@condition paralyzed} until Krystofor deals damage to it, or until the end of Krystofor's next turn. When the paralysis ends, the target is {@condition frightened} of Krystofor for 1 minute. The {@condition frightened} target can repeat the saving throw at the end of each of its turns, with disadvantage if it can see Krystofor, ending the {@condition frightened} condition on itself on a success."
 					]
 				},
 				{
 					"name": "Move",
 					"entries": [
-						"The revenant moves up to its speed without provoking opportunity attacks."
+						"Krystofor moves up to his speed without provoking opportunity attacks."
 					]
 				}
 			],
@@ -6284,13 +6289,14 @@
 				{
 					"name": "Hallish Smite",
 					"entries": [
-						"On its turn, when the revenant hits a creature against which it has sworn vengeance, the target takes an extra 14 ({@damage 4d6}) damage of the same type as the attack."
+						"On his turn, when Krystofor hits a creature against which he has sworn vengeance, the target takes an extra 14 ({@damage 4d6}) damage of the same type as the attack."
 					]
 				}
 			],
 			"miscTags": [
 				"MW",
-				"AOE"
+				"RW",
+				"RNG"
 			]
 		},
 		{
