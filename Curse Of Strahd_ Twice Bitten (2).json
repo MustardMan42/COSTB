@@ -6044,7 +6044,7 @@
 			"source": "CurseOfStrahdTwiceBitten",
 			"page": 34,
 			"size": [
-				"H"
+				"M"
 			],
 			"type": "undead",
 			"alignment": [
@@ -6502,6 +6502,470 @@
 			},
 			"isNpc": true,
 			"uniqueId": "73e3dd08-ae26-46c4-be81-0bf7223d3bec"
+		},
+		{
+			"name": "Krystofor Taltos (lvl 7)",
+			"source": "CurseOfStrahdTwiceBitten",
+			"page": 35,
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "18d8 + 72",
+				"average": 153
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 16,
+			"con": 18,
+			"int": 13,
+			"wis": 16,
+			"cha": 18,
+			"save": {
+				"str": "+9",
+				"wis": "+7",
+				"cha": "+8",
+				"con": "+8"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 13,
+			"resist": [
+				{
+					"resist": [
+						"fire",
+						"psychic"
+					]
+				},
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"poisoned",
+				"stunned"
+			],
+			"languages": [
+				"Common",
+				"Draconic"
+			],
+			"cr": "9",
+			"trait": [
+				{
+					"name": "Regeneration",
+					"entries": [
+						"Krystofor regains 10 hit points at the start of his turn. If Krystofor takes radiant damage, this trait doesn't function at the start of the his next turn. Krystofor's body is destroyed only if he starts his turn with 0 hit points and doesn't regenerate."
+					]
+				},
+				{
+					"name": "Rejuvenation",
+					"entries": [
+						"When Krystofor's body is destroyed, his soul lingers. After 24 hours, the soul inhabits and animates another humanoid corpse on the same plane of existence and regains all his hit points. While the soul is bodiless, a {@spell wish} spell can be used to force the soul to go to the afterlife and not return."
+					]
+				},
+				{
+					"name": "Turn Immunity",
+					"entries": [
+						"Krystofor is immune to effects that turn undead."
+					]
+				},
+				{
+					"name": "Vengeful Tracker",
+					"entries": [
+						"Krystofor knows the distance to and direction of any creature against which he seeks revenge, even if the creature and Krystofor  are on different planes of existence. If the creature being tracked by Krystofor dies, Krystofor knows."
+					]
+				},
+				{
+					"name": "Powered by Hatred",
+					"entries": [
+						"Any weapon Krystofor wields is considered a magical +1 weapon when calculating the attack roll and damage (included in the action)."
+					]
+				},
+				{
+					"name": "Legendary Resistance (1/Day)",
+					"entries": [
+						"If Krystofor fails a saving throw, he can choose to succeed instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Krystofor makes three attacks with his fists."
+					]
+				},
+				{
+					"name": "Fists",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d6 + 6}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "(Alt. Attack) Sunsword",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}12 ({@damage 1d8 + 7}) radiant damage."
+					]
+				}
+			],
+			"environment": [
+				"arctic",
+				"desert",
+				"forest",
+				"hill",
+				"swamp",
+				"urban"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/revenant.mp3"
+			},
+			"traitTags": [
+				"Legendary Resistances",
+				"Regeneration",
+				"Rejuvenation",
+				"Turn Immunity"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"R"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://5e.tools/img/MM/Revenant.png",
+			"fluff": {
+				"name": "Revenant",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"A revenant forms from the soul of a mortal who met a cruel and undeserving fate. It claws its way back into the world to seek revenge against the one who wronged it. The revenant reclaims its mortal body and superficially resembles a zombie. However, instead of lifeless eyes, a revenant's eyes burn with resolve and flare in the presence of its adversary. If the revenant's original body was destroyed or is otherwise unavailable, the spirit of the revenant enters another humanoid corpse. Regardless of the body the revenant uses as a vessel, its adversary always recognizes the revenant for what it truly is.",
+									{
+										"type": "entries",
+										"name": "Hunger for Revenge",
+										"entries": [
+											"A revenant has only one year to exact revenge. When its adversary dies, or if the revenant fails to kill its adversary before its time runs out, it crumbles to dust and its soul fades into the afterlife. If its foe is too powerful for the revenant to destroy on its own, it seeks worthy allies to help it fulfill its quest."
+										]
+									},
+									{
+										"name": "Divine Justice",
+										"type": "entries",
+										"entries": [
+											"No magic can hide a creature pursued by a revenant, which always knows the direction and distance between it and the target of its vengeance. In cases where the revenant seeks revenge against more than one adversary, it pursues them one at a time, starting with the creature that dealt it the killing blow. If the revenant's body is destroyed, its soul flies forth to seek out a new corpse in which to resume its hunt."
+										]
+									},
+									{
+										"name": "Undead Nature",
+										"type": "entries",
+										"entries": [
+											"A revenant doesn't require air, food, drink, or sleep."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Revenant.jpg"
+						}
+					}
+				]
+			},
+			"conditionInflict": [
+				"frightened",
+				"paralyzed"
+			],
+			"isNpc": true,
+			"isNamedCreature": true,
+			"legendaryActions": 3,
+			"legendaryHeader": [
+				"Krystofor can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. Krystofor regains spent legendary actions at the start of its turn."
+			],
+			"legendary": [
+				{
+					"name": "Claws",
+					"entries": [
+						"Krystofor  makes one attack with its fists."
+					]
+				},
+				{
+					"name": "Vengeful Stare",
+					"entries": [
+						"Krystofor targets one creature he can see within 30 feet of him and against which he has sworn vengeance. The target must make a {@dc 15} Wisdom saving throw. On a failure, the target is {@condition paralyzed} until Krystofor deals damage to it, or until the end of Krystofor's next turn. When the paralysis ends, the target is {@condition frightened} of Krystofor for 1 minute. The {@condition frightened} target can repeat the saving throw at the end of each of its turns, with disadvantage if it can see Krystofor, ending the {@condition frightened} condition on itself on a success."
+					]
+				},
+				{
+					"name": "Move",
+					"entries": [
+						"Krystofor moves up to his speed without provoking opportunity attacks."
+					]
+				}
+			],
+			"uniqueId": "09a59543-61db-45d0-bbd3-c96038abd96a",
+			"bonus": [
+				{
+					"name": "Hallish Smite",
+					"entries": [
+						"On his turn, when Krystofor hits a creature against which he has sworn vengeance, the target takes an extra 14 ({@damage 4d6}) fire damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Hank (lvl 7)",
+			"source": "CurseOfStrahdTwiceBitten",
+			"page": 35,
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "16d8 + 80",
+				"average": 152
+			},
+			"speed": {
+				"fly": {
+					"number": 40,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 14,
+			"dex": 20,
+			"con": 20,
+			"int": 13,
+			"wis": 16,
+			"cha": 18,
+			"save": {
+				"con": "+9",
+				"wis": "+7",
+				"cha": "+8",
+				"dex": "+9"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 13,
+			"resist": [
+				{
+					"resist": [
+						"psychic"
+					]
+				},
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"poisoned",
+				"stunned"
+			],
+			"languages": [
+				"Common",
+				"Draconic"
+			],
+			"cr": "9",
+			"trait": [
+				{
+					"name": "Regeneration",
+					"entries": [
+						"Hank regains 10 hit points at the start of his turn. If Hank takes fire or radiant damage, this trait doesn't function at the start of Hank's next turn. Hank's body is destroyed only if he starts his turn with 0 hit points and doesn't regenerate."
+					]
+				},
+				{
+					"name": "Turn Immunity",
+					"entries": [
+						"Hank is immune to effects that turn undead."
+					]
+				},
+				{
+					"name": "Vengeful Tracker",
+					"entries": [
+						"Hank knows the distance to and direction of any creature against which he seeks revenge, even if the creature and Hank are on different planes of existence. If Hank being tracked by Hank dies, Hank knows."
+					]
+				},
+				{
+					"name": "Powered by Hatred",
+					"entries": [
+						"Any weapon Hank wields is considered a magical +1 weapon when calculating the attack roll and damage (included in the action)."
+					]
+				},
+				{
+					"name": "Legendary Resistance (1/Day)",
+					"entries": [
+						"If Hank fails a saving throw, he can choose to succeed instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Foretelling Touch",
+					"entries": [
+						"{@hit 9} to hit, reach 5 ft., one creature. {@h}15 ({@damage 2d10 + 4}) psychic damage, and the target must roll a {@dice d4} and subtract the number rolled from the next attack roll or saving throw it makes before the start of Hank's next turn."
+					]
+				},
+				{
+					"name": "Suffering Echoes",
+					"entries": [
+						"Hank targets a creature he can see within 30 feet of himself. The target must make a {@dc 15} Wisdom saving throw. On a failed save, the target takes 19 ({@damage 3d12}) psychic damage, and waves of painful memories leap from the target to up to three other creatures of Hank's choice that are within 30 feet of the target, each of which takes 13 ({@damage 3d8}) psychic damage."
+					]
+				}
+			],
+			"environment": [
+				"arctic",
+				"desert",
+				"forest",
+				"hill",
+				"swamp",
+				"urban"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/revenant.mp3"
+			},
+			"traitTags": [
+				"Legendary Resistances",
+				"Regeneration",
+				"Turn Immunity"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"damageTags": [
+				"Y"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://5e.tools/img/MM/Revenant.png",
+			"fluff": {
+				"name": "Revenant",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"A revenant forms from the soul of a mortal who met a cruel and undeserving fate. It claws its way back into the world to seek revenge against the one who wronged it. The revenant reclaims its mortal body and superficially resembles a zombie. However, instead of lifeless eyes, a revenant's eyes burn with resolve and flare in the presence of its adversary. If the revenant's original body was destroyed or is otherwise unavailable, the spirit of the revenant enters another humanoid corpse. Regardless of the body the revenant uses as a vessel, its adversary always recognizes the revenant for what it truly is.",
+									{
+										"type": "entries",
+										"name": "Hunger for Revenge",
+										"entries": [
+											"A revenant has only one year to exact revenge. When its adversary dies, or if the revenant fails to kill its adversary before its time runs out, it crumbles to dust and its soul fades into the afterlife. If its foe is too powerful for the revenant to destroy on its own, it seeks worthy allies to help it fulfill its quest."
+										]
+									},
+									{
+										"name": "Divine Justice",
+										"type": "entries",
+										"entries": [
+											"No magic can hide a creature pursued by a revenant, which always knows the direction and distance between it and the target of its vengeance. In cases where the revenant seeks revenge against more than one adversary, it pursues them one at a time, starting with the creature that dealt it the killing blow. If the revenant's body is destroyed, its soul flies forth to seek out a new corpse in which to resume its hunt."
+										]
+									},
+									{
+										"name": "Undead Nature",
+										"type": "entries",
+										"entries": [
+											"A revenant doesn't require air, food, drink, or sleep."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Revenant.jpg"
+						}
+					}
+				]
+			},
+			"isNpc": true,
+			"uniqueId": "c8c4b19b-d539-42da-9d2b-744542594080"
 		}
 	]
 }
