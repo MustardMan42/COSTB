@@ -708,7 +708,7 @@
 				{
 					"name": "False Appearance",
 					"entries": [
-						"While the blight remains motionless, it is indistinguishable from a dead shrub."
+						"While the swarm remains motionless, it is indistinguishable from a dead shrub."
 					]
 				},
 				{
@@ -867,7 +867,7 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"Victor is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 14}, {@hit 6} to hit with spell attacks). Victor has the following wizard spells prepared:"
+						"Victor is a 9th-level spellcaster. Victor's spellcasting ability is Intelligence (spell save {@dc 14}, {@hit 6} to hit with spell attacks). Victor has the following wizard spells prepared:"
 					],
 					"spells": {
 						"0": {
@@ -879,41 +879,41 @@
 							]
 						},
 						"1": {
-							"slots": 4,
 							"spells": [
 								"{@spell detect magic}",
 								"{@spell mage armor}",
 								"{@spell magic missile}",
 								"{@spell shield}"
-							]
+							],
+							"slots": 4
 						},
 						"2": {
-							"slots": 3,
 							"spells": [
 								"{@spell misty step}",
 								"{@spell suggestion}"
-							]
+							],
+							"slots": 3
 						},
 						"3": {
-							"slots": 3,
 							"spells": [
 								"{@spell counterspell}",
 								"{@spell fireball}",
 								"{@spell fly}"
-							]
+							],
+							"slots": 3
 						},
 						"4": {
-							"slots": 3,
 							"spells": [
 								"{@spell greater invisibility}",
 								"{@spell ice storm}"
-							]
+							],
+							"slots": 3
 						},
 						"5": {
-							"slots": 1,
 							"spells": [
 								"{@spell cone of cold}"
-							]
+							],
+							"slots": 1
 						}
 					},
 					"ability": "int",
@@ -1398,7 +1398,7 @@
 				{
 					"name": "Parry",
 					"entries": [
-						"Vargas adds 2 to its AC against one melee attack that would hit it. To do so, Vargas must see the attacker and be wielding a melee weapon."
+						"The Baron adds 2 to his AC against one melee attack that would hit him. To do so, the Baron must see the attacker and be wielding a melee weapon."
 					]
 				}
 			],
@@ -1504,7 +1504,7 @@
 				{
 					"name": "Protected by Dark Powers (1/Day)",
 					"entries": [
-						"If Izek is attacked, he magically calls {@dice 1d4} Hell Puppies. The called creatures arrive at initiative count 20 of the next round, acting as allies of Izek and obeying his spoken commands. The fiends remain for 1 hour, until Izek dies, or until he dismisses them as a bonus action."
+						"If Izek is attacked, he magically calls {@dice 1d4} {@creature hell puppy|curseofstrahdtwicebitten|Hell Puppies}. The called creatures arrive at initiative count 20 of the next round, acting as allies of Izek and obeying his spoken commands. The creatures remain for 1 hour, until Izek dies, or until he dismisses them as a bonus action."
 					]
 				},
 				{
@@ -1708,7 +1708,7 @@
 				{
 					"name": "Regeneration",
 					"entries": [
-						"Anastrasya regains 10 hit points at the start of its turn if it has at least 1 hit point and isn't in sunlight or running water. If Anastrasya takes radiant damage or damage from holy water, this trait doesn't function at the start of Anastrasya's next turn."
+						"Anastrasya regains 10 hit points at the start of her turn if she has at least 1 hit point and isn't in sunlight or running water. If Anastrasya takes radiant damage or damage from holy water, this trait doesn't function at the start of her next turn."
 					]
 				},
 				{
@@ -1722,9 +1722,9 @@
 					"entries": [
 						"Anastrasya has the following flaws:",
 						"{@i Forbiddance.} Anastrasya can't enter a residence without an invitation from one of the occupants.",
-						"{@i Harmed by Running Water.} Anastrasya takes 20 acid damage when it ends its turn in running water.",
-						"{@i Stake to the Heart.} Anastrasya is destroyed if a piercing weapon made of wood is driven into its heart while it is {@condition incapacitated} in its resting place.",
-						"{@i Sunlight Hypersensitivity.} Anastrasya takes 20 radiant damage when it starts its turn in sunlight. While in sunlight, it has disadvantage on attack rolls and ability checks."
+						"{@i Harmed by Running Water.} Anastrasya takes 20 acid damage when she ends her turn in running water.",
+						"{@i Stake to the Heart.} Anastrasya is destroyed if a piercing weapon made of wood is driven into her heart while she is {@condition incapacitated} in her resting place.",
+						"{@i Sunlight Hypersensitivity.} Anastrasya takes 20 radiant damage when she starts her turn in sunlight. While in sunlight, she has disadvantage on attack rolls and ability checks."
 					]
 				},
 				{
@@ -2199,7 +2199,7 @@
 			"shortName": "Ireena"
 		},
 		{
-			"name": "Izek Strazni (Vampire Spawn)",
+			"name": "Izek Strazni (vampire spawn)",
 			"isNpc": true,
 			"source": "CurseOfStrahdTwiceBitten",
 			"page": 15,
@@ -2207,7 +2207,7 @@
 				"M"
 			],
 			"type": {
-				"type": "humanoid",
+				"type": "undead",
 				"tags": [
 					"human"
 				]
@@ -2218,7 +2218,7 @@
 			],
 			"ac": [
 				{
-					"ac": 15,
+					"ac": 18,
 					"from": [
 						"natural armor"
 					]
@@ -2250,7 +2250,7 @@
 				{
 					"name": "Protected by Dark Powers (1/Day)",
 					"entries": [
-						"After Izek has taken damage, he magically calls {@dice 1d4} Hell Puppies. The called creatures arrive at initiative count 20 of the next round, acting as allies of Izek and obeying his spoken commands. The fiends remain for 1 hour, until Izek dies, or until he dismisses them as a bonus action."
+						"After Izek has taken damage, he magically calls {@dice 1d4} {@creature hell hound||Hell Hounds}. The called creatures arrive at initiative count 20 of the next round, acting as allies of Izek and obeying his spoken commands. The creatures remain for 1 hour, until Izek dies, or until he dismisses them as a bonus action."
 					]
 				},
 				{
@@ -2264,7 +2264,7 @@
 					"entries": [
 						"Izek has the following flaws:",
 						"{@i Forbiddance}. Izek can't enter a residence without an invitation from one of the occupants.",
-						"{@i Harmed by Running Water}. Izek takes 20 acid damage if it ends its turn in running water.",
+						"{@i Harmed by Running Water}. Izek takes 20 acid damage if he ends his turn in running water.",
 						"{@i Stake to the Heart}. If a piercing weapon made of wood is driven into Izek's heart while Izek is {@condition incapacitated} in his resting place, Izek is {@condition paralyzed} until the stake is removed.",
 						"{@i Sunlight Hypersensitivity}. Izek takes 20 radiant damage when he starts his turn in sunlight. While in sunlight, he has disadvantage on attack rolls and ability checks."
 					]
@@ -2273,6 +2273,12 @@
 					"name": "Spider Climb",
 					"entries": [
 						"Izek can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				},
+				{
+					"name": "Brute",
+					"entries": [
+						"A melee weapon deals one extra die of its damage when Izek hits with it (included in the attack)."
 					]
 				}
 			],
@@ -2286,23 +2292,24 @@
 				{
 					"name": "Hurl Flame",
 					"entries": [
-						"{@atk rs} {@hit 5} to hit, range 60 ft., one target. {@h}10 ({@damage 3d6}) fire damage. If the target is a flammable object that isn't being worn or carried, it catches fire."
+						"{@atk rs} {@hit 7} to hit, range 60 ft., one target. {@h}10 ({@damage 3d6}) fire damage. If the target is a flammable object that isn't being worn or carried, it catches fire."
 					]
 				},
 				{
 					"name": "Bite",
 					"entries": [
-						"{@atk mw} {@hit 7} to hit, reach 5 ft., one willing creature, or a creature that is {@condition grappled} by the vampire, {@condition incapacitated}, or {@condition restrained}. {@h}7 ({@damage 1d6 + 4}) piercing damage plus 7 ({@damage 2d6}) necrotic damage. The target's hit point maximum is reduced by an amount equal to the necrotic damage taken, and Izek regains hit points equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0."
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one willing creature, or a creature that is {@condition grappled} by Izek, {@condition incapacitated}, or {@condition restrained}. {@h}11 ({@damage 2d6 + 4}) piercing damage plus 7 ({@damage 2d6}) necrotic damage. The target's hit point maximum is reduced by an amount equal to the necrotic damage taken, and Izek regains hit points equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0."
 					]
 				},
 				{
 					"name": "Claws",
 					"entries": [
-						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d4 + 4}) slashing damage. Instead of dealing damage, the vampire can grapple the target (escape {@dc 14})."
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 3d4 + 4}) slashing damage. Instead of dealing damage, Izek can grapple the target (escape {@dc 14})."
 					]
 				}
 			],
 			"traitTags": [
+				"Brute",
 				"Regeneration",
 				"Spider Climb"
 			],
@@ -2419,7 +2426,8 @@
 						"piercing",
 						"slashing"
 					],
-					"note": "from nonmagical attacks"
+					"note": "from nonmagical attacks",
+					"cond": true
 				}
 			],
 			"senses": [
@@ -2431,6 +2439,16 @@
 			"miscTags": [
 				"MW",
 				"HPR"
+			],
+			"variant": [
+				{
+					"name": "\"That Axe Belongs to Me\"",
+					"entries": [
+						"If Izek recovers his Berserker Battleaxe, use the following attack in place of his Claws:",
+						"{@b {@i Berserker Battleaxe.}} {@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d8 + 5}) slashing damage, or {@h}16 ({@damage 2d10 + 5}) slashing damage when used with two hands."
+					],
+					"type": "variant"
+				}
 			]
 		},
 		{
@@ -3061,7 +3079,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The troll makes three attacks: one with its bite, one with its claws, and one with its maul."
+						"The troll makes three attacks: one with its bite, one with its claws, and one with its maul. If the Three-Armed Troll is disarmed, it will make one bite attack and two claw attacks."
 					]
 				},
 				{
@@ -3161,10 +3179,7 @@
 				]
 			},
 			"uniqueId": "d3061957-ced1-447e-bca7-df47cde5cdad",
-			"shortName": "Three-Armed Troll",
-			"actionHeader": [
-				"If the Three Armed Troll is disarmed, it will make one bite attack and two claw attacks."
-			]
+			"shortName": "Three-Armed Troll"
 		},
 		{
 			"name": "Morgantha",
@@ -4191,7 +4206,7 @@
 				{
 					"name": "Unusual Nature",
 					"entries": [
-						"The skeleton doesn't require air, food, drink, or sleep."
+						"The zombie doesn't require air, food, drink, or sleep."
 					]
 				}
 			],
@@ -5309,7 +5324,7 @@
 			"uniqueId": "d0061af2-38e7-4b5f-8a14-d7724cff23f8"
 		},
 		{
-			"name": "Anastrasya Karelova (lvl 2)",
+			"name": "Anastrasya Karelova (Enhanced Threat)",
 			"isNpc": true,
 			"source": "CurseOfStrahdTwiceBitten",
 			"page": 30,
@@ -5375,7 +5390,7 @@
 				{
 					"name": "Regeneration",
 					"entries": [
-						"Anastrasya regains 10 hit points at the start of its turn if it has at least 1 hit point and isn't in sunlight or running water. If Anastrasya takes radiant damage or damage from holy water, this trait doesn't function at the start of Anastrasya's next turn."
+						"Anastrasya regains 10 hit points at the start of her turn if she has at least 1 hit point and isn't in sunlight or running water. If Anastrasya takes radiant damage or damage from holy water, this trait doesn't function at the start of her next turn."
 					]
 				},
 				{
@@ -5389,9 +5404,9 @@
 					"entries": [
 						"Anastrasya has the following flaws:",
 						"{@i Forbiddance.} Anastrasya can't enter a residence without an invitation from one of the occupants.",
-						"{@i Harmed by Running Water.} Anastrasya takes 20 acid damage when it ends its turn in running water.",
-						"{@i Stake to the Heart.} Anastrasya is destroyed if a piercing weapon made of wood is driven into its heart while it is {@condition incapacitated} in its resting place.",
-						"{@i Sunlight Hypersensitivity.} Anastrasya takes 20 radiant damage when it starts its turn in sunlight. While in sunlight, it has disadvantage on attack rolls and ability checks."
+						"{@i Harmed by Running Water.} Anastrasya takes 20 acid damage when she ends her turn in running water.",
+						"{@i Stake to the Heart.} Anastrasya is destroyed if a piercing weapon made of wood is driven into her heart while she is {@condition incapacitated} in her resting place.",
+						"{@i Sunlight Hypersensitivity.} Anastrasya takes 20 radiant damage when she starts her turn in sunlight. While in sunlight, she has disadvantage on attack rolls and ability checks."
 					]
 				},
 				{
@@ -5460,7 +5475,7 @@
 			}
 		},
 		{
-			"name": "Strahd Zombie (lvl 2)",
+			"name": "Strahd Zombie (Enchanced Threat)",
 			"source": "CurseOfStrahdTwiceBitten",
 			"page": 31,
 			"size": [
