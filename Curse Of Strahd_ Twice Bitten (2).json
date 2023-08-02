@@ -2870,7 +2870,8 @@
 						"piercing",
 						"slashing"
 					],
-					"note": "from nonmagical attacks"
+					"note": "from nonmagical attacks",
+					"cond": true
 				}
 			],
 			"action": [
@@ -2984,14 +2985,14 @@
 							"type": "entries",
 							"name": "Unto the Earth",
 							"entries": [
-								"The wendigo reaches forth its claw and summons {@creature Swarm of Maggots|VRGR} from the earth. The {@creature Swarm of Maggots|VRGR} rolls initiative and follows the wendigo's instructions."
+								"The wendigo reaches forth its claw and summons a {@creature Swarm of Maggots|VRGR} from the earth. The {@creature Swarm of Maggots|VRGR} rolls initiative and follows the wendigo's instructions."
 							]
 						},
 						{
 							"type": "entries",
 							"name": "Thy Flesh Consumed",
 							"entries": [
-								"The wendigo targets one creature it can see within so feet of it who has taken physical damage. If the target can see the wendigo, it must succeed on a {@dc 16} Wisdom saving throw against this effect, or take {@damage 2d6} piercing damage."
+								"The wendigo targets one creature it can see within 60 feet of it that has taken damage. If the target can see the wendigo, it must succeed on a {@dc 16} Wisdom saving throw against this effect, or take {@damage 2d6} piercing damage."
 							]
 						}
 					],
