@@ -7057,6 +7057,7 @@
 			"type": "M",
 			"weapon": true,
 			"weaponCategory": "simple",
+			"range": "20/60",
 			"baseItem": "+1 dagger|dmg",
 			"bonusWeapon": "+1",
 			"weight": 1,
