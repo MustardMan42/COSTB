@@ -14,7 +14,9 @@
 				],
 				"color": "#800000"
 			}
-		]
+		],
+		"dateAdded": 1696466309,
+		"dateLastModified": 1696466309
 	},
 	"monster": [
 		{
@@ -7043,7 +7045,7 @@
 			"entries": [
 				"{@i This hellish appendage has barbed spines, elongated fingers, and long nails. The skin is bright red, which extends to the elbow. The hand radiates heat even when its fire abilities are not in use, when examined long enough the hand occasionally spasms and emits a wisp of smoke or a spark.}",
 				"While the Hand is attached to your body, you are considered proficient with melee and spell attacks using it. If you cannot normally cast spells, use your charisma modifier. The Hand is considered your pact weapon, and benefits from any improvements to your pact weapon, including overcoming resistances or making multiple attacks with one action. Additionally, your unarmed strikes inflict 1d8 bludgeoning damage.",
-				"The Hand has 6 charges, it regains 1d4 + 1 expended charges daily at midnight.",
+				"The Hand has 6 charges, it regains {@dice 1d4 + 1} expended charges daily at midnight.",
 				"{@b {@i Fueled by Fire. (1-2 charges)}} Melee attacks with the Hand are powered by the flames of Hell. When you use your action to make a melee attack with the Hand of the Fiend, you may use your bonus action to spend 1 charge, inflicting an additional 1d8 fire damage on the attack. If you can make two melee attacks with the Hand of the Fiend, you can spend an additional charge to add 1d8 fire damage to the second attack.",
 				"{@b {@i Cloaked in Smoke. (2 charges)}} As an action, you may expend two charges to cast the spell {@spell Invisibility} without using any other material components or spell slots. This does require concentration.",
 				"{@b {@i Hurl Flame. (2 charges)}} As an action, you snap your fingers and produce an orb of fire in the palm of the hand. You may make a ranged spell attack, range 60 ft., one target. On a hit, the orb inflicts {@damage 3d6} fire damage to the target. If the target is a flammable object that isn't being worn or carried, it catches fire."
@@ -7150,7 +7152,7 @@
 			"entries": [
 				"{@i This blade is formed from the shattered pieces of a mirror, perhaps manifested by Strahd's self-loathing in a moment of furious anger. The blade floats freely close to its wielder's hand, and seems to obey their will faster than movement of their arm. At the behest of its master the blade can split apart and form a broken mirror that floats in the air, or instead create a dangerous field or glass shards to slice the flesh of anything that passes through.}",
 				"You have a +2 bonus to attack and damage rolls made with this magic weapon.",
-				"The Mirror Blade has 6 charges, it regains 1d4 + 1 expended charges daily at midnight.",
+				"The Mirror Blade has 6 charges, it regains {@dice 1d4 + 1} expended charges daily at midnight.",
 				"{@b {@i Shattered Glass. (1 charge)}} As an action, you may expend one charge to cast the spell {@spell Cloud of Daggers} without using any other material components or spell slots. This does not require concentration, but the sword cannot be used for melee attacks or A Dream of Mirrors while the spell is active.",
 				"{@b {@i Dream of Mirrors. (3 charges)}} As an action, you may expend three charges to cast the spell {@spell Scrying} without using any other material components or spell slots. This does not require concentration, but the sword cannot be used for melee attacks or Shattered Glass while the spell is active."
 			]
@@ -7180,6 +7182,20 @@
 				"You have a +1 bonus to attack and damage rolls made with this magic weapon. In addition, while you are attuned to this weapon, your hit point maximum increases by 1 for each level you have attained.",
 				"{@b {@i Curse.}} This axe is cursed, and becoming attuned to it extends the curse to you. As long as you remain cursed, you are unwilling to part with the axe, keeping it within reach at all times. You also have disadvantage on attack rolls with weapons other than this one, unless no foe is within 60 feet of you that you can see or hear.",
 				"Whenever you roll a 1 on an attack roll using this weapon, roll a new attack targeting an ally within five feet of you. If the result is a hit, they take damage as if you had attacked them. If there are no allies within five feet of you, make a new attack roll with advantage against your own AC. If the result is a hit, you take damage as if you had attacked yourself."
+			]
+		},
+		{
+			"name": "Suit of Approximate Splendor",
+			"source": "CurseOfStrahdTwiceBitten",
+			"page": 0,
+			"rarity": "common",
+			"curse": true,
+			"tier": "minor",
+			"wondrous": true,
+			"entries": [
+				"{@i This two piece suit is a moth-eaten shade of musty orange. The buttons that are present are hanging by a thread.}",
+				"This shabby outfit changes form based on the wearer's requests, although the effect is purely cosmetic. The suit can be worn over armor, and is not an illusion.",
+				"{@b {@i Curse.}} The Suit of Approximate Splendor will always create a slightly worse version of whatever the wearer requests it to become. For example, the requested glorious purple robe will appear frayed at the edges and have moth holes or mud streaks. It's trying its best, all right?"
 			]
 		}
 	]
