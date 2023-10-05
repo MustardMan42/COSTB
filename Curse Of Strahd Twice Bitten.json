@@ -7114,7 +7114,8 @@
 			"baseItem": "silvered shortsword|phb",
 			"property": [
 				"F",
-				"L"
+				"L",
+				"S"
 			],
 			"dmg1": "1d6",
 			"dmgType": "P",
