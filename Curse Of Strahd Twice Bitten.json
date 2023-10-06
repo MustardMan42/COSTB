@@ -6959,6 +6959,7 @@
 			"page": 0,
 			"rarity": "rare",
 			"tier": "major",
+			"weight": 1,
 			"wondrous": true,
 			"reqAttune": true,
 			"entries": [
@@ -7122,6 +7123,7 @@
 			"dmg1": "1d6",
 			"dmgType": "P",
 			"weight": 2,
+			"value": 11000,
 			"entries": [
 				"{@i A wooden cane with a polished silver handle, molded into the shape of a hawk's head. The left eye of the hawk has been replaced with a polished bead of pure black jet. When the bead is pressed inwards, the wooden casing of the cane is released and the silvered blade of the sword is revealed. Hidden by the case, on each side of the blade are carved names: Ingrid and Erasmus.}",
 				"{@b {@i Special.}} When you make a melee attack with the Sword Cane, you may choose to deal bludgeoning damage instead of piercing damage."
@@ -7191,6 +7193,7 @@
 			"rarity": "common",
 			"curse": true,
 			"tier": "minor",
+			"weight": 4,
 			"wondrous": true,
 			"entries": [
 				"{@i This two piece suit is a moth-eaten shade of musty orange. The buttons that are present are hanging by a thread.}",
